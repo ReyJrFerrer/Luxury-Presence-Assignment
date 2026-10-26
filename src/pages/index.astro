@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
 import ProfileCard from "../components/ProfileCard";
 import PropertyCollection from "../components/PropertyCollection";
+import Reviews from "../components/Reviews.astro";
 import { assets, collection, collectionDetails } from "../data/assets";
 const portraitSizes = await Promise.all(
   [320, 480, 730].map((width) =>
@@ -386,9 +387,10 @@ const items = await Promise.all(
         ))}
       </div>
     </section>
+    <Reviews />
     <section class="lifestyle section-space wrap" id="services">
       <div class="section-kicker">
-        <p class="eyebrow">06 / PLACES, SPACES & LIFESTYLE</p>
+        <p class="eyebrow">07 / PLACES, SPACES & LIFESTYLE</p>
         <span aria-hidden="true">↗</span>
       </div>
       <div class="lifestyle-heading" data-reveal>
@@ -442,7 +444,7 @@ const items = await Promise.all(
       <span id="contacts" class="anchor-alias"></span>
       <div class="wrap">
         <div class="section-kicker">
-          <p class="eyebrow">07 / YOUR NEXT CHAPTER</p>
+          <p class="eyebrow">08 / YOUR NEXT CHAPTER</p>
           <span class="eyebrow">LET’S OPEN THE DOOR</span>
         </div>
         <div class="contact-grid">

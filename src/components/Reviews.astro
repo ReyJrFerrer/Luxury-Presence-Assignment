@@ -1,0 +1,285 @@
+---
+import { reviews, reviewSource } from "../data/reviews";
+import { StarIcon } from "@heroicons/react/24/solid";
+---
+
+<section
+  class="reviews section-space"
+  id="reviews"
+  aria-labelledby="reviews-title"
+>
+  <div class="wrap">
+    <div class="section-kicker">
+      <p class="eyebrow">06 / CLIENT PERSPECTIVES</p>
+      <span aria-hidden="true">⌂</span>
+    </div>
+    <div class="reviews-heading" data-reveal>
+      <h2 id="reviews-title">
+        Every home.
+        <br />
+        <em>A personal story.</em>
+      </h2>
+      <div class="reviews-intro">
+        <p>
+          A new address is only part of the journey. Discover clients’
+          experiences of working with Marci and her team.
+        </p>
+        <a
+          class="quiet-link"
+          href={reviewSource}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read full reviews on Yelp <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+    {reviews.length > 1 && (
+      <div class="reviews-controls" hidden>
+        <button type="button" data-review-prev aria-label="Previous review">
+          ←
+        </button>
+        <button type="button" data-review-pause aria-pressed="false">
+          Pause motion
+        </button>
+        <button type="button" data-review-next aria-label="Next review">
+          →
+        </button>
+      </div>
+    )}
+  </div>
+  <div
+    class="reviews-track"
+    tabindex="0"
+    role="region"
+    aria-label="Client reviews; scroll horizontally to read more"
+    data-lenis-prevent
+  >
+    {reviews.map((review) => (
+      <article class="review-card">
+        <span class="review-quote" aria-hidden="true">
+          “
+        </span>
+        {review.rating && (
+          <p
+            class="review-rating"
+            role="img"
+            aria-label={`${review.rating} out of 5 stars`}
+          >
+            {Array.from({ length: review.rating }, () => (
+              <StarIcon aria-hidden="true" width={38} height={38} />
+            ))}
+          </p>
+        )}
+        <blockquote>
+          <p>{review.text}</p>
+        </blockquote>
+        <footer>
+          <strong>{review.name}</strong>
+          <a href={reviewSource} target="_blank" rel="noopener noreferrer">
+            Yelp review ↗
+          </a>
+        </footer>
+      </article>
+    ))}
+  </div>
+  <p class="reviews-note wrap">
+    Selected Yelp review excerpts. Read the full stories on Yelp.
+  </p>
+</section>
+
+<script>
+  const section = document.querySelector<HTMLElement>("#reviews");
+  const track = section?.querySelector<HTMLElement>(".reviews-track");
+  const controls = section?.querySelector<HTMLElement>(".reviews-controls");
+  if (section && track && controls) {
+    const pause = controls.querySelector<HTMLButtonElement>(
+      "[data-review-pause]",
+    )!;
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+    let paused = reduced.matches;
+    let visible = false;
+    let timer: ReturnType<typeof setInterval>;
+    const updatePause = () => {
+      pause.setAttribute("aria-pressed", String(paused));
+      pause.textContent = paused ? "Play motion" : "Pause motion";
+    };
+    const move = (direction: number) => {
+      const step = track.children[0].getBoundingClientRect().width + 24;
+      const end = track.scrollWidth - track.clientWidth;
+      const next = track.scrollLeft + direction * step;
+      track.scrollTo({
+        left:
+          direction > 0 && track.scrollLeft >= end - 2
+            ? 0
+            : direction < 0 && track.scrollLeft <= 2
+              ? end
+              : Math.max(0, Math.min(end, next)),
+        behavior: reduced.matches ? "instant" : "smooth",
+      });
+    };
+    const stop = () => {
+      paused = true;
+      updatePause();
+    };
+    controls.hidden = false;
+    updatePause();
+    pause.addEventListener("click", () => {
+      paused = !paused;
+      updatePause();
+    });
+    controls
+      .querySelector("[data-review-prev]")!
+      .addEventListener("click", () => {
+        stop();
+        move(-1);
+      });
+    controls
+      .querySelector("[data-review-next]")!
+      .addEventListener("click", () => {
+        stop();
+        move(1);
+      });
+    track.addEventListener("pointerdown", stop);
+    track.addEventListener("keydown", stop);
+    track.addEventListener("wheel", stop, { passive: true });
+    const motionChange = () => {
+      if (reduced.matches) stop();
+    };
+    reduced.addEventListener("change", motionChange);
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+    });
+    observer.observe(section);
+    timer = setInterval(() => {
+      if (
+        !paused &&
+        visible &&
+        !document.hidden &&
+        !section.matches(":hover") &&
+        !section.contains(document.activeElement)
+      )
+        move(1);
+    }, 4500);
+    window.addEventListener(
+      "pagehide",
+      () => {
+        clearInterval(timer);
+        observer.disconnect();
+        reduced.removeEventListener("change", motionChange);
+      },
+      { once: true },
+    );
+  }
+</script>
+
+<style>
+  .reviews {
+    background: #eeece4;
+    overflow: hidden;
+  }
+  .reviews-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+  .reviews-intro {
+    max-width: 330px;
+  }
+  .reviews-intro p {
+    color: #555d4e;
+    margin-bottom: 24px;
+  }
+  .reviews-controls {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .reviews-controls[hidden] {
+    display: none;
+  }
+  .reviews-controls button {
+    min-height: 44px;
+    min-width: 44px;
+    border: 1px solid #a5ab9b;
+    padding: 10px 18px;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .reviews-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+    padding: 8px var(--gutter) 30px;
+    scrollbar-width: thin;
+    scrollbar-color: #7a826e transparent;
+  }
+  .review-card {
+    flex: 0 0 min(430px, 84vw);
+    scroll-snap-align: start;
+    background: #faf9f4;
+    border: 1px solid #d3d7c9;
+    padding: clamp(26px, 3vw, 44px);
+    border-radius: 8px 60px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 24px #29312108;
+  }
+  .review-quote {
+    font: 90px/0.8 var(--serif);
+    color: #7a846d;
+  }
+  .review-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #efbb38;
+    margin-block: 12px;
+  }
+  .review-rating :global(svg) {
+    width: clamp(30px, 2.65vw, 38px);
+    height: auto;
+    flex-shrink: 0;
+    stroke: currentColor;
+    stroke-width: 0.65;
+    stroke-linejoin: round;
+  }
+  blockquote {
+    margin: 18px 0 36px;
+    font: 26px/1.4 var(--serif);
+  }
+  .review-card footer {
+    margin-top: auto;
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+  }
+  .reviews-note {
+    font-size: 12px;
+    color: #555d4e;
+    margin-top: 20px;
+  }
+  @media (max-width: 700px) {
+    .reviews-heading {
+      flex-direction: column;
+      align-items: start;
+      gap: 24px;
+    }
+    .reviews-intro {
+      max-width: 100%;
+    }
+    blockquote {
+      font-size: 23px;
+    }
+  }
+</style>
