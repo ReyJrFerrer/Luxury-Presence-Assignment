@@ -7,12 +7,15 @@ import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
 import "../styles/global.css";
 import SpecularButton from "../components/SpecularButton";
+import { Image } from "astro:assets";
+import { assets, socials } from "../data/assets";
 const {
   title = "Marci Metzger | A Doorway to Exceptional Living",
   description = "Discover a different perspective on home with Marci Metzger of The Ridge Realty Group in Pahrump, Nevada. Explore the collection and start a conversation.",
   image = "/og-image.jpg",
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+
 ---
 
 <!doctype html>
@@ -56,8 +59,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     </a>
     <header class="site-header">
       <a class="brand" href="/">
-        <span>MARCI METZGER</span>
-        <small>THE RIDGE REALTY GROUP</small>
+      <Image
+        src={assets.wordmark.image}
+        alt={assets.wordmark.alt}
+        width={280}
+        loading="lazy"
+      />
       </a>
       <nav aria-label="Main navigation">
         <a href="/#collection">The collection</a>
