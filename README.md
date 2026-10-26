@@ -27,6 +27,7 @@ If running under a restricted filesystem, prefix Astro commands with `ASTRO_TELE
 - Astro 7 / TypeScript: static homepage, seven photographic detail pages, sitemap and metadata.
 - `src/pages/index.astro`: eight editorial chapters, semantic content, session-aware doors and native dialog gallery.
 - `src/layouts/Layout.astro`: shared document, single Lenis controller, IntersectionObserver/WAAPI reveals, self-hosted fonts, structured data.
+- `src/components/SpecularButton.tsx` and CSS: official React Bits specular edge-light effect, adapted to a native contact link and hydrated with `client:load`. The shared fixed glass header uses 35px corners, 24px backdrop blur, and a translucent fallback. Reduced motion bypasses the effect.
 - `src/components/PropertyCollection.tsx`: `client:visible` React island, responsive ring sizing, reduced-motion and server-rendered static fallback.
 - `src/components/CircularCarousel.tsx` and CSS: official React Bits TypeScript/plain-CSS source, momentum, snapping, click-to-focus, keyboard controls and off-screen suspension. Added visible previous/next controls, removed unused stock images. License in `docs/REACT-BITS-LICENSE.md`.
 - `src/data/assets.ts`: typed canonical image records with source, alt text, role, priority, crop and explicitly unknown property association. Static image imports keep archived alternatives out of the shipped bundle.

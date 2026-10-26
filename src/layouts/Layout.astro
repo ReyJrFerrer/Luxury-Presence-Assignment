@@ -6,6 +6,7 @@ import "@fontsource/nunito/500.css";
 import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
 import "../styles/global.css";
+import SpecularButton from "../components/SpecularButton";
 const {
   title = "Marci Metzger | A Doorway to Exceptional Living",
   description = "Discover a different perspective on home with Marci Metzger of The Ridge Realty Group in Pahrump, Nevada. Explore the collection and start a conversation.",
@@ -61,9 +62,25 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <nav aria-label="Main navigation">
         <a href="/#collection">The collection</a>
         <a href="/#about">Meet Marci</a>
-        <a href="/#contact" class="nav-contact">
+        <SpecularButton
+          client:load
+          href="/#contact"
+          className="nav-contact"
+          size="sm"
+          radius={25}
+          tint="#ffffff"
+          tintOpacity={0.45}
+          blur={12}
+          textColor="#242720"
+          baseColor="#a0a69b"
+          lineColor="#ffffff"
+          intensity={1.4}
+          idleIntensity={0.5}
+          glow={0.7}
+          autoAnimate={false}
+        >
           Let’s talk <span aria-hidden="true">↗</span>
-        </a>
+        </SpecularButton>
       </nav>
     </header>
     <slot />
