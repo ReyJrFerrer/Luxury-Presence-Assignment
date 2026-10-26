@@ -1105,9 +1105,6 @@ p + p {
   .spotlight-copy h2 {
     font-size: clamp(36px, 11.5vw, 58px);
   }
-  .spotlight-copy h2 br:last-child {
-    display: none;
-  }
   .spotlight-images figure img {
     aspect-ratio: 1.4;
   }

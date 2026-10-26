@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import ProfileCard from "../components/ProfileCard";
 import PropertyCollection from "../components/PropertyCollection";
 import Reviews from "../components/Reviews.astro";
+import PropertySearch from "../components/PropertySearch.astro";
 import { assets, collection, collectionDetails } from "../data/assets";
 const portraitSizes = await Promise.all(
   [320, 480, 730].map((width) =>
@@ -282,7 +283,7 @@ const items = await Promise.all(
           <em>
             everyday
             <br />
-            extraordinary.
+             extraordinary.
           </em>
         </h2>
         <p>
@@ -440,6 +441,7 @@ const items = await Promise.all(
         ))}
       </div>
     </section>
+    <PropertySearch />
     <section class="contact section-space" id="contact">
       <span id="contacts" class="anchor-alias"></span>
       <div class="wrap">

@@ -1,0 +1,319 @@
+---
+import { Image } from "astro:assets";
+import { assets } from "../data/assets";
+
+const locations = [
+  "Any",
+  "Alamo",
+  "Alton",
+  "Amargosa Valley",
+  "Beatty",
+  "Beryl",
+  "Blue Diamond",
+  "Boulder City",
+  "Brian Head",
+  "Cal Nev Ari",
+  "Caliente",
+  "Cedar City",
+  "Cold Creek",
+  "Crystal",
+  "Duck Creek Village",
+  "Dyer",
+  "Elko",
+  "Ely",
+  "Goldfield",
+  "Goodsprings",
+  "Hatch",
+  "Henderson",
+  "Indian Springs",
+  "Jean",
+  "Las Vegas",
+  "Laughlin",
+  "Logandale",
+  "Mc Gill",
+  "Mesquite",
+  "Moapa",
+  "Mount Charleston",
+  "Mountain Springs",
+];
+const types = ["Any", "Land", "Residential Lease", "High Rise", "Residential"];
+const sorts = [
+  "Newest",
+  "Oldest",
+  "Least Expensive to Most",
+  "Most Expensive to Least",
+  "Bedrooms (Low to High)",
+  "Bedrooms (High to Low)",
+  "Bathrooms (Low to High)",
+  "Bathrooms (High to Low)",
+];
+---
+
+<section
+  class="property-search section-space"
+  id="property-search"
+  aria-labelledby="search-title"
+>
+  <Image
+    class="search-landscape"
+    src={assets.hero.image}
+    alt=""
+    widths={[640, 1200, 1920]}
+    sizes="100vw"
+    loading="lazy"
+  />
+  <div class="wrap search-content">
+    <div class="search-heading" data-reveal>
+      <p class="eyebrow">A PLACE FOR YOUR NEXT CHAPTER</p>
+      <h2 id="search-title">
+        Find your
+        <br />
+        <em>dream home.</em>
+      </h2>
+    </div>
+    <div class="search-panel" data-reveal>
+      <div class="search-panel-heading">
+        <h3>Consider the possibilities.</h3>
+        <span class="eyebrow">SEARCH LISTINGS</span>
+      </div>
+      <form aria-label="Property search preview" onsubmit="return false">
+        <div class="search-fields">
+          <label class="search-wide">
+            Location
+            <select name="location">
+              {locations.map((value) => (
+                <option>{value}</option>
+              ))}
+            </select>
+          </label>
+          <label class="search-wide">
+            Type
+            <select name="type">
+              {types.map((value) => (
+                <option>{value}</option>
+              ))}
+            </select>
+          </label>
+          <label class="search-wide">
+            Sort by
+            <select name="sort">
+              {sorts.map((value) => (
+                <option>{value}</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Bedrooms
+            <select name="bedrooms">
+              <option>Any Number</option>
+              <option>Studio</option>
+              {[1, 2, 3, 4, 5, 6].map((value) => (
+                <option>{value}+</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Baths
+            <select name="baths">
+              <option>Any Number</option>
+              {[1, 2, 3, 4, 5, 6].map((value) => (
+                <option>{value}+</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Min price
+            <span class="price-field">
+              <span aria-hidden="true">$</span>
+              <input
+                aria-label="Minimum price in US dollars"
+                name="min-price"
+                type="number"
+                min="0"
+                step="1000"
+                inputmode="numeric"
+                placeholder="No minimum"
+              />
+            </span>
+          </label>
+          <label>
+            Max price
+            <span class="price-field">
+              <span aria-hidden="true">$</span>
+              <input
+                aria-label="Maximum price in US dollars"
+                name="max-price"
+                type="number"
+                min="0"
+                step="1000"
+                inputmode="numeric"
+                placeholder="No maximum"
+              />
+            </span>
+          </label>
+          <button
+            class="button button-dark search-wide"
+            type="button"
+            disabled
+            aria-describedby="search-preview-note"
+          >
+            Search now <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <p id="search-preview-note">
+          Search preview · For available homes,{" "}
+          <a href="tel:+12069196886">speak with Marci</a>.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .property-search {
+    position: relative;
+    isolation: isolate;
+    background: #343b2f;
+  }
+  .search-landscape {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  .property-search::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, #18201988, #343b2f44 40%, #343b2f 75%);
+  }
+  .search-heading {
+    color: #fffdf5;
+    margin-bottom: 48px;
+  }
+  .search-heading .eyebrow {
+    margin-bottom: 20px;
+  }
+  .search-panel {
+    background: #f8f7f1;
+    padding: clamp(26px, 4vw, 64px);
+    border: 1px solid #fff9;
+    border-radius: 24px;
+    box-shadow: 0 24px 70px #121a2033;
+  }
+  .search-panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--line);
+  }
+  .search-panel-heading h3 {
+    font-size: clamp(30px, 3vw, 44px);
+  }
+  .search-panel-heading .eyebrow {
+    color: #626b58;
+  }
+  .search-fields {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 28px 20px;
+    align-items: end;
+  }
+  .search-wide {
+    grid-column: span 2;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font: 500 14px/1.5 var(--sans);
+  }
+  select,
+  input {
+    font: 400 15px/1.4 var(--sans);
+    color: var(--ink);
+    min-width: 0;
+    width: 100%;
+  }
+  select,
+  .price-field {
+    background: #fffdf8;
+    border: 1px solid #c5c9bc;
+    border-radius: 12px;
+    min-height: 54px;
+  }
+  select {
+    padding: 14px 12px;
+    cursor: pointer;
+  }
+  .price-field {
+    display: flex;
+    align-items: center;
+    padding-inline: 12px;
+    gap: 8px;
+  }
+  .price-field > span {
+    color: #626b58;
+  }
+  input {
+    border: 0;
+    background: transparent;
+    padding-block: 14px;
+  }
+  input::placeholder {
+    color: #686d61;
+    font-size: 13px;
+  }
+  .price-field:focus-within {
+    outline: 2px solid var(--olive);
+    outline-offset: 3px;
+  }
+  .search-fields button {
+    min-height: 54px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+  .search-fields button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    animation: none;
+    transform: none;
+  }
+  #search-preview-note {
+    font-size: 13px;
+    color: #62645b;
+    margin-top: 24px;
+  }
+  #search-preview-note a {
+    text-underline-offset: 4px;
+  }
+  @media (max-width: 1000px) {
+    .search-fields {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 600px) {
+    .search-fields {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px 14px;
+    }
+    .search-panel-heading {
+      flex-direction: column;
+      align-items: start;
+      gap: 12px;
+    }
+    .search-panel {
+      border-radius: 18px;
+    }
+    .search-heading {
+      margin-bottom: 32px;
+    }
+  }
+</style>
