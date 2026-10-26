@@ -420,35 +420,7 @@ const items = await Promise.all(
           </article>
         ))}
       </div>
-      <details class="archive" id="gallery">
-        <summary>
-          <span>The photographic journal</span>
-          <span class="eyebrow">
-            7 VIEWS <span aria-hidden="true">+</span>
-          </span>
-        </summary>
-        <div class="journal-grid">
-          {gallery.map((asset, i) => (
-            <figure>
-              <a href={asset.image.src} data-gallery data-caption={asset.alt}>
-                <Image
-                  src={asset.image}
-                  alt={asset.alt}
-                  widths={[400, 800]}
-                  sizes="(max-width:600px) 90vw, 45vw"
-                  loading="lazy"
-                />
-                <span class="image-expand" aria-hidden="true">
-                  ↗
-                </span>
-              </a>
-              <figcaption>
-                0{i + 1} / {asset.alt}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </details>
+     
     </section>
     <section class="contact section-space" id="contact">
       <span id="contacts" class="anchor-alias"></span>
