@@ -934,6 +934,19 @@ p + p {
 .contact-information .text-link {
   margin-top: 12px;
 }
+.office-map {
+  margin-top: 28px;
+  aspect-ratio: 16 / 10;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #9b9f8e4d;
+}
+.office-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .footer {
   padding-block: 55px 25px;
 }

@@ -1431,41 +1431,41 @@
   },
   {
     "id": 143,
-    "source": "Images/social-media-icons/facebook.png",
+    "source": "Images/social-media-icons/facebook.svg",
     "width": 324,
     "height": 324,
-    "bytes": 13651,
-    "sha": "7eb3b62b96a6bc6eb22173129c6fddcb7615b0f17f2e6472b03d61049b2932f7",
+    "bytes": 2212,
+    "sha": "96e92eab0026be30c075f479691789864f95926b8404ec65dc6e74a6452b3de6",
     "role": "facebook",
     "decision": "Used: footer socials"
   },
   {
     "id": 144,
-    "source": "Images/social-media-icons/instagram.png",
+    "source": "Images/social-media-icons/instagram.svg",
     "width": 324,
     "height": 324,
-    "bytes": 80241,
-    "sha": "80ccf6943832965fb737e9e46055179dada7738a3d91338318f4575aaac1a097",
+    "bytes": 90132,
+    "sha": "d7e97b692e9d724ab5f673ac17af1a97cb44e9926c01a7d5a9a3e5884be72ecb",
     "role": "instagram",
     "decision": "Used: footer socials"
   },
   {
     "id": 145,
-    "source": "Images/social-media-icons/linkedin.png",
+    "source": "Images/social-media-icons/linkedin.svg",
     "width": 324,
     "height": 324,
-    "bytes": 11499,
-    "sha": "e2205d19dc36782cc8aafaecc6e813a0a30f593214bc084f2fa4750fe9047b6f",
+    "bytes": 3350,
+    "sha": "2e3b62fa0f11e65db0b9fe7740c8a21444b2d16d2d333374461d6216dea156aa",
     "role": "linkedin",
     "decision": "Used: footer socials"
   },
   {
     "id": 146,
-    "source": "Images/social-media-icons/yelp.png",
+    "source": "Images/social-media-icons/yelp.svg",
     "width": 324,
     "height": 324,
-    "bytes": 14645,
-    "sha": "168188376e00bd2c49ae4dd7063bdecafb2bdea923e96ceef8533bcf185b1f2b",
+    "bytes": 4202,
+    "sha": "396d5e751f68f66e92e3b88beed840f6fb20aae2975261175d7b011fb33c532d",
     "role": "yelp",
     "decision": "Used: footer socials"
   }

@@ -24,10 +24,10 @@ Every one of the 147 valid source image files is recorded in `asset-inventory.js
 | RealtoLogo.webp | Affiliations |
 | EqualHousingOpportunity.webp | Footer |
 | Archived qt=q_95_ie-d.webp | Original Marci Metzger Homes wordmark in footer |
-| social-media-icons/facebook.png | Footer social link icon |
-| social-media-icons/instagram.png | Footer social link icon |
-| social-media-icons/linkedin.png | Footer social link icon |
-| social-media-icons/yelp.png | Footer social link icon |
+| social-media-icons/facebook.svg | Footer social link icon |
+| social-media-icons/instagram.svg | Footer social link icon |
+| social-media-icons/linkedin.svg | Footer social link icon |
+| social-media-icons/yelp.svg | Footer social link icon |
 
 Exceptions: 97 archived size/crop variants share the same 20 photographic/logo subjects and intentionally use their canonical representative. Twenty-four `vt*.webp` map tiles, `spotlight-poi3_hdpi_ie-d.png` map marker, and `transparent_ie-d.png` browser spacer are excluded because they are incomplete interface artifacts, not standalone photography. No image file was corrupt. Property associations, addresses and availability remain unknown; descriptive titles do not imply listing identities.
 

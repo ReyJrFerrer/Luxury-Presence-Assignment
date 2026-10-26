@@ -8,7 +8,7 @@ const inventory = JSON.parse(
 test("every supplied image is decoded and has an explicit display decision", () => {
   const files = fs
     .readdirSync("Images", { recursive: true })
-    .filter((f) => /\.(webp|png|jpe?g)$/i.test(f));
+    .filter((f) => /\.(webp|png|jpe?g|svg)$/i.test(f));
   assert.equal(inventory.length, files.length);
   for (const row of inventory) {
     assert.ok(row.width > 0 && row.height > 0, row.source);
