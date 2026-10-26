@@ -6,6 +6,7 @@
   --olive: #343b2f;
   --serif: "Cormorant Garamond", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
+  --nunito: "Nunito", Arial, sans-serif;
   --gutter: clamp(22px, 5vw, 88px);
   --space: clamp(76px, 9vw, 150px);
 }
@@ -20,8 +21,11 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.65;
+}
+p {
+  font-family: var(--nunito);
 }
 body:has(dialog[open]) {
   overflow: hidden;
@@ -198,7 +202,8 @@ p + p {
   display: flex;
   align-items: center;
   gap: 40px;
-  font-size: 11px;
+  font-family: var(--nunito);
+  font-size: 16px;
 }
 .site-header nav > a:hover {
   text-decoration: underline;
@@ -275,7 +280,7 @@ p + p {
   background: #ffffff80;
 }
 .hero-description {
-  font-size: 13px;
+  font-size: 20px;
   line-height: 1.7;
   color: #f3f2eb;
 }
@@ -508,7 +513,7 @@ p + p {
   max-width: 310px;
   padding-top: 22px;
   justify-self: end;
-  font-size: 13px;
+  font-size: 18px;
   color: var(--muted);
 }
 .statement-copy p:first-child {
@@ -548,7 +553,7 @@ p + p {
   padding-top: 10px;
 }
 .collection-heading > p {
-  font-size: 12px;
+  font-size: 18px;
   color: var(--muted);
   padding-bottom: 8px;
 }
@@ -605,7 +610,7 @@ p + p {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 8px;
+  font-size: 14px;
   color: var(--muted);
   margin: 24px 0;
 }
@@ -614,7 +619,7 @@ p + p {
 }
 .collection-note {
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   color: #595d51;
   max-width: 950px;
   margin: auto;
@@ -639,7 +644,7 @@ p + p {
   margin-top: 15px;
 }
 .static-collection p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .spotlight {
   display: grid;
@@ -725,7 +730,7 @@ p + p {
   margin: 25px 0 15px;
 }
 .about-copy > p:not(.eyebrow) {
-  font-size: 13px;
+  font-size: 18px;
   max-width: 420px;
   color: #51574b;
 }
@@ -763,7 +768,7 @@ p + p {
   margin: 10px 0 55px;
 }
 .lifestyle-heading > p {
-  font-size: 12px;
+  font-size: 18px;
   color: var(--muted);
 }
 .lifestyle-grid {
@@ -790,7 +795,7 @@ p + p {
   font-size: 30px;
 }
 .lifestyle-grid article > p:last-child {
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 13px;
   color: var(--muted);
 }
@@ -870,7 +875,7 @@ p + p {
 }
 .contact-information {
   padding-top: 18px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .contact-information > p {
   color: #e2e3d7;
@@ -887,7 +892,7 @@ p + p {
 }
 .contact-address {
   margin-top: 25px;
-  font-size: 11px;
+  font-size: 13px;
   color: #d4d7c9;
 }
 .contact-address > p:first-child {
@@ -967,7 +972,7 @@ p + p {
   margin: auto;
 }
 .lightbox p {
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 18px;
 }
 .lightbox-close {
@@ -999,7 +1004,7 @@ p + p {
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   margin-top: 40px;
-  font-size: 13px;
+  font-size: 15px;
 }
 .detail-caption h2 {
   font-size: 42px;
@@ -1081,7 +1086,7 @@ p + p {
 }
 @media (max-width: 700px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
   .site-header {
     height: 82px;
@@ -1101,7 +1106,7 @@ p + p {
   .nav-contact {
     padding: 10px 12px;
     gap: 14px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .hero {
     min-height: 900px;
@@ -1123,7 +1128,7 @@ p + p {
     letter-spacing: 0.1em;
   }
   .hero-description {
-    font-size: 12px;
+    font-size: 14px;
   }
   .hero-actions {
     margin-top: 25px;
@@ -1261,10 +1266,10 @@ p + p {
     width: 100%;
   }
   .collection-note {
-    font-size: 10px;
+    font-size: 12px;
   }
   .collection-instruction {
-    font-size: 7px;
+    font-size: 9px;
   }
   .static-collection {
     grid-template-columns: 1fr 1fr;
