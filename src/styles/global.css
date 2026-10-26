@@ -776,8 +776,8 @@ p + p {
   margin-top: 100px;
 }
 .affiliations img {
-  width: 85px;
-  height: 85px;
+  width: 115px;
+  height: 115px;
   object-fit: contain;
   mix-blend-mode: multiply;
 }
@@ -1382,8 +1382,8 @@ p + p {
     font-size: 9px;
   }
   .affiliations img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
   }
   .lifestyle-heading {
     display: block;
