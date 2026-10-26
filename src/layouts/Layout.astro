@@ -84,8 +84,23 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       </nav>
     </header>
     <slot />
+    <div class="page-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden></div>
     <script>
       import Lenis from "lenis";
+      const progress = document.querySelector<HTMLElement>(".page-progress")!;
+      const updateProgress = () => {
+        const distance = document.documentElement.scrollHeight - window.innerHeight;
+        progress.hidden = distance <= 0;
+        const value = distance > 0 ? Math.max(0, Math.min(1, window.scrollY / distance)) : 0;
+        progress.style.setProperty("--scroll-progress", String(value));
+        progress.setAttribute("aria-valuenow", String(Math.round(value * 100)));
+      };
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      window.addEventListener("resize", updateProgress);
+      window.addEventListener("pageshow", updateProgress);
+      const progressResize = new ResizeObserver(updateProgress);
+      progressResize.observe(document.body);
+      updateProgress();
       const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
       let lenis: Lenis | undefined;
       function setupScroll() {
@@ -122,6 +137,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         () => {
           lenis?.destroy();
           observer.disconnect();
+          progressResize.disconnect();
+          window.removeEventListener("scroll", updateProgress);
+          window.removeEventListener("resize", updateProgress);
           reduced.removeEventListener("change", setupScroll);
         },
         { once: true },
