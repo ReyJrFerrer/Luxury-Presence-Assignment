@@ -284,3 +284,10 @@ export const gallery = [
   assets.courts,
   assets.greens,
 ];
+
+export const collectionDetails = {
+  heading: "Imagine what comes next.",
+  description:
+    "This photograph is presented for inspiration. A property address, price, and current availability have not been supplied. Speak with Marci about verified listings and viewing opportunities.",
+  provenance: "From the project’s photographic archive.",
+};

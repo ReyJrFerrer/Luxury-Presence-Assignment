@@ -30,7 +30,7 @@ test("all built pages have titles, main landmarks, and no broken local links or 
   const files = fs
     .readdirSync("dist", { recursive: true })
     .filter((f) => f.endsWith(".html"));
-  assert.equal(files.length, 8);
+  assert.equal(files.length, 7);
   for (const file of files) {
     const html = fs.readFileSync(path.join("dist", file), "utf8");
     assert.match(html, /<title>[^<]+<\/title>/);
@@ -40,4 +40,13 @@ test("all built pages have titles, main landmarks, and no broken local links or 
       assert.ok(fs.existsSync(resolved), `${file}: ${url}`);
     }
   }
+});
+
+test("windows detail is replaced by the collection popup", () => {
+  assert.equal(fs.existsSync("dist/collection/windows/index.html"), false);
+  const sitemap = fs.readFileSync("dist/sitemap.xml", "utf8");
+  assert.ok(!sitemap.includes("/collection/windows/"));
+  const home = fs.readFileSync("dist/index.html", "utf8");
+  assert.ok(!home.includes("Explore this view"));
+  assert.ok(!home.includes("/collection/windows/"));
 });

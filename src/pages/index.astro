@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
 import ProfileCard from "../components/ProfileCard";
 import PropertyCollection from "../components/PropertyCollection";
-import { assets, collection, gallery } from "../data/assets";
+import { assets, collection, collectionDetails } from "../data/assets";
 const portraitSizes = await Promise.all(
   [320, 480, 730].map((width) =>
     getImage({ src: assets.portrait.image, width, format: "webp" }),
@@ -20,7 +20,13 @@ const items = await Promise.all(
     alt: item.asset.alt,
     title: item.title,
     subtitle: item.subtitle,
-    href: `/collection/${item.slug}/`,
+    fullSrc: (
+      await getImage({
+        src: item.asset.image,
+        width: item.asset.image.width,
+        format: "webp",
+      })
+    ).src,
   })),
 );
 ---
@@ -237,18 +243,18 @@ const items = await Promise.all(
       </figure>
     </section>
     <section
-      class="collection section-space"
+      class="collection"
       id="collection"
       aria-labelledby="collection-title"
     >
       <span id="search-listing" class="anchor-alias"></span>
-      <div class="wrap">
+      <div class="collection-intro wrap">
         <div class="section-kicker">
           <p class="eyebrow">03 / THE COLLECTION</p>
           <span class="eyebrow">A NEW POINT OF VIEW</span>
         </div>
         <div class="collection-heading" data-reveal>
-          <h2>
+          <h2 id="collection-title">
             Beautiful spaces.
             <br />
             <em>Endless possibilities.</em>
@@ -260,12 +266,11 @@ const items = await Promise.all(
           </p>
         </div>
       </div>
-      <PropertyCollection items={items} client:visible />
-      <p class="collection-note wrap">
-        A photographic collection from Marci’s project archive. For current
-        listings, property details, and availability,{" "}
-        <a href="tel:+12069196886">speak with Marci ↗</a>.
-      </p>
+      <PropertyCollection
+        items={items}
+        details={collectionDetails}
+        client:visible
+      />
     </section>
     <section class="spotlight section-space wrap" id="purpose">
       <div class="spotlight-copy">
@@ -488,37 +493,4 @@ const items = await Promise.all(
     </section>
   </main>
   <Footer />
-  <dialog class="lightbox" aria-label="Photograph detail" data-lenis-prevent>
-    <button class="lightbox-close" aria-label="Close photograph" autofocus>
-      Close ×
-    </button>
-    <img alt="" />
-    <p></p>
-  </dialog>
-  <script>
-    const dialog = document.querySelector<HTMLDialogElement>(".lightbox")!;
-    let opener: HTMLElement | null = null;
-    document
-      .querySelectorAll<HTMLAnchorElement>("[data-gallery]")
-      .forEach((link) =>
-        link.addEventListener("click", (event) => {
-          event.preventDefault();
-          opener = link;
-          const img = dialog.querySelector("img")!;
-          img.src = link.href;
-          img.alt = link.dataset.caption ?? "";
-          dialog.querySelector("p")!.textContent = img.alt;
-          dialog.showModal();
-        }),
-      );
-    dialog
-      .querySelector("button")!
-      .addEventListener("click", () => dialog.close());
-    dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) dialog.close();
-    });
-    dialog.addEventListener("close", () =>
-      opener?.focus({ preventScroll: true }),
-    );
-  </script>
 </Layout>

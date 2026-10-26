@@ -51,3 +51,19 @@ Final Lighthouse, default simulated mobile profile, local production build, Chro
 ## Acceptance review
 
 Astro/React islands, official React Bits circular implementation, one Lenis controller, paneled perspective doors, real supplied hero landscape and agent portrait, white frame and offset black square, eight editorial chapters, responsive controls, reduced-motion/no-JS fallbacks, all-image accounting, optimized local assets, working navigation/contact links, metadata/sitemap, and production build were evaluated and implemented. Verified live listing records and deployed field performance remain outside the supplied data and local validation scope.
+
+## Flex Carousel update — 26 October 2026
+
+Replaced Circular Carousel with the official React Bits Flex Carousel TypeScript/plain-CSS source and its OGL dependency. The `rise` entry animation runs on viewport hydration; autoplay and vertical wheel capture are disabled. Captions, visible image counts, and the Explore this view links have been removed. Any visible photograph can open the native modal directly. Image-specific titles/subtitles and full-resolution images are combined with the former Windows page's shared archive description and inquiry action.
+
+The `/collection/windows/` generated page and sitemap entry are removed. Six other existing collection URLs are retained for compatibility. The obsolete circular component, styles, caption controls, and unused homepage lightbox were removed.
+
+Validation after this change:
+- Astro check: zero errors, warnings, or hints.
+- Production build: seven static HTML pages plus sitemap; successful.
+- `npm test`: four passing tests, including absence of the Windows page, its sitemap entry, and old Explore this view links.
+- Chromium production preview, 1440×1000, 820×1180 and 390×844: official entry animation completes; Home/Right/Enter opens the Windows image with the correct content; pointer click opens the modal; dragging does not open it; Escape and Close work; focus restores to the carousel; no horizontal overflow or uncaught page errors.
+- Reduced-motion: static photographs still open the modal. No JavaScript: seven direct image links remain usable.
+- Reviewed desktop carousel and desktop/mobile popup screenshots. Raw captures and browser report are at `/tmp/marci-flex/`.
+
+The existing Lighthouse results above predate this carousel change; performance was not remeasured for the OGL implementation. No physical touch-device or screen-reader session was performed for this update.

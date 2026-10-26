@@ -1,0 +1,159 @@
+.flex-shell {
+  height: clamp(320px, 37vw, 570px);
+  margin: 0;
+}
+.flex-carousel:focus-visible {
+  outline: 3px solid #967a41;
+  outline-offset: -4px;
+}
+.flex-carousel:not([data-dragging]) {
+  cursor: zoom-in;
+}
+.static-collection {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  padding: 40px var(--gutter);
+}
+.static-collection a {
+  overflow: hidden;
+  border-radius: 18px;
+  cursor: zoom-in;
+}
+.static-collection img {
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  transition: scale 0.35s ease;
+}
+@media (hover: hover) {
+  .static-collection a:hover img {
+    scale: 1.04;
+  }
+}
+.collection-dialog {
+  width: min(1160px, calc(100vw - 48px));
+  max-height: 90svh;
+  padding: 64px 26px 26px;
+  border: 1px solid #ffffff70;
+  border-radius: 24px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 35px 100px #0006;
+  overflow: auto;
+}
+.collection-dialog::backdrop {
+  background: #0e1715c9;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.collection-dialog[open] {
+  animation: collection-popup 240ms ease-out;
+}
+.collection-dialog__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 40px;
+  padding: 7px 16px;
+  border: 1px solid var(--line);
+  background: #ffffff90;
+  color: var(--ink);
+  font-size: 12px;
+}
+.collection-dialog__close span {
+  font-size: 22px;
+  line-height: 1;
+}
+.collection-dialog__layout {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+.collection-dialog__image {
+  overflow: hidden;
+  border-radius: 14px;
+  background: #dedfd5;
+}
+.collection-dialog__image img {
+  width: 100%;
+  height: auto;
+  max-height: 70svh;
+  object-fit: contain;
+}
+.collection-dialog__copy {
+  padding: 6px 8px;
+}
+.collection-dialog__copy h2 {
+  font-size: clamp(36px, 3.8vw, 58px);
+  margin: 14px 0 20px;
+}
+.collection-dialog__copy > p:not(.eyebrow) {
+  font-size: 13px;
+  color: var(--muted);
+}
+.collection-dialog__inquiry {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.collection-dialog__inquiry h3 {
+  font-size: 26px;
+}
+.collection-dialog__inquiry p {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.collection-dialog__inquiry .button {
+  margin-top: 20px;
+  gap: 20px;
+}
+@keyframes collection-popup {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 700px) {
+  .flex-shell {
+    height: clamp(200px, 64vw, 300px);
+  }
+  .static-collection {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .collection-dialog {
+    width: calc(100vw - 24px);
+    padding: 64px 16px 20px;
+    border-radius: 20px;
+  }
+  .collection-dialog__layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .collection-dialog__image img {
+    max-height: 40svh;
+  }
+  .collection-dialog__copy h2 {
+    font-size: 42px;
+  }
+  .collection-dialog__inquiry {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .static-collection a:hover img {
+    scale: 1;
+  }
+}

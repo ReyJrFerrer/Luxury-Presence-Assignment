@@ -28,10 +28,10 @@ try {
   await p.goto("http://127.0.0.1:4322/");
   await p.waitForTimeout(2600);
   await p.locator("#collection").scrollIntoViewIfNeeded();
-  await p.locator(".circular-carousel[data-ready]").waitFor();
+  await p.locator('.flex-carousel[data-entry="complete"]').waitFor();
   await p.waitForTimeout(600);
-  const before = await p.locator(".active-caption h3").textContent();
-  const box = await p.locator(".circular-carousel").boundingBox();
+  const before = await p.locator(".flex-carousel__live").textContent();
+  const box = await p.locator(".flex-carousel").boundingBox();
   const cdp = await mobile.newCDPSession(p);
   let x = box.x + box.width * 0.8;
   const y = box.y + box.height * 0.45;
@@ -52,7 +52,7 @@ try {
   });
   await p.waitForTimeout(1800);
   assert.notEqual(
-    await p.locator(".active-caption h3").textContent(),
+    await p.locator(".flex-carousel__live").textContent(),
     before,
     "touch swipe changes active photograph",
   );

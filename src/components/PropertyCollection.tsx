@@ -1,91 +1,125 @@
-import { useEffect, useState } from "react";
-import CircularCarousel, {
-  type CircularCarouselItem,
-} from "./CircularCarousel";
-type Item = CircularCarouselItem & { href: string };
-export default function PropertyCollection({ items }: { items: Item[] }) {
-  const [active, setActive] = useState(0);
-  const [width, setWidth] = useState(340);
-  const [reduced, setReduced] = useState(false);
-  const [mounted, setMounted] = useState(false);
+import { useEffect, useId, useRef, useState } from "react";
+import FlexCarousel, { type FlexCarouselItem } from "./FlexCarousel";
+import "./PropertyCollection.css";
+type Item = FlexCarouselItem & { fullSrc: string };
+type Details = { heading: string; description: string; provenance: string };
+export default function PropertyCollection({
+  items,
+  details,
+}: {
+  items: Item[];
+  details: Details;
+}) {
+  const [interactive, setInteractive] = useState(false);
+  const [unavailable, setUnavailable] = useState(false);
+  const [selected, setSelected] = useState<number | null>(null);
+  const dialog = useRef<HTMLDialogElement>(null);
+  const opener = useRef<HTMLElement | null>(null);
+  const titleId = useId();
   useEffect(() => {
     const query = matchMedia("(prefers-reduced-motion: reduce)");
-    const update = () => {
-      setReduced(query.matches);
-      setWidth(
-        window.innerWidth < 600 ? 240 : window.innerWidth < 1000 ? 290 : 380,
-      );
-    };
+    const update = () => setInteractive(!query.matches);
     update();
-    setMounted(true);
     query.addEventListener("change", update);
-    window.addEventListener("resize", update);
-    return () => {
-      query.removeEventListener("change", update);
-      window.removeEventListener("resize", update);
-    };
+    return () => query.removeEventListener("change", update);
   }, []);
+  useEffect(() => {
+    if (selected !== null) dialog.current?.showModal();
+  }, [selected]);
+  const open = (index: number) => {
+    opener.current = document.activeElement as HTMLElement | null;
+    setSelected(index);
+  };
+  const close = () => {
+    setSelected(null);
+    opener.current?.focus({ preventScroll: true });
+  };
+  const item = selected === null ? null : items[selected];
   return (
     <div className="collection-island">
-      {mounted && !reduced ? (
-        <>
-          <div className="ring-shell">
-            <CircularCarousel
-              items={items}
-              preset="cylinder"
-              intro="none"
-              autoplay="off"
-              cardWidth={width}
-              aspectRatio={1.36}
-              gap={36}
-              curve={0}
-              tilt={-7}
-              perspective={1000}
-              cornerRadius={0}
-              parallax={0}
-              stretch={0}
-              depthFade={0.65}
-              fadeColor="#e8e6df"
-              captions={false}
-              onChange={setActive}
-            />
-          </div>
-          <div className="active-caption">
-            <span className="eyebrow">
-              {String(active + 1).padStart(2, "0")} /{" "}
-              {String(items.length).padStart(2, "0")}
-            </span>
-            <div>
-              <h3>{items[active].title}</h3>
-              <p>{items[active].subtitle}</p>
-            </div>
-            <a className="text-link" href={items[active].href}>
-              Explore this view <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <p className="carousel-instruction">
-            Drag to explore <span aria-hidden="true">·</span> or use the arrow
-            controls
-          </p>
-        </>
+      {interactive && !unavailable ? (
+        <div className="flex-shell">
+          <FlexCarousel
+            items={items}
+            intro="rise"
+            preset="liquid"
+            cardHeight={0.72}
+            gap={22}
+            radius={18}
+            fit="natural"
+            autoplay={false}
+            captions={false}
+            captureWheel={false}
+            focusOnClick={false}
+            onSelect={open}
+            onUnavailable={() => setUnavailable(true)}
+          />
+        </div>
       ) : (
         <div className="static-collection">
-          {items.map((item) => (
-            <a href={item.href} key={item.href}>
+          {items.map((image, index) => (
+            <a
+              key={image.src}
+              href={image.fullSrc}
+              aria-label={`Open ${image.title}`}
+              onClick={(event) => {
+                event.preventDefault();
+                open(index);
+              }}
+            >
               <img
-                src={item.src}
-                alt={item.alt}
-                width="640"
-                height="470"
+                src={image.src}
+                alt={image.alt}
+                width="800"
+                height="533"
                 loading="lazy"
               />
-              <h3>{item.title}</h3>
-              <p>{item.subtitle}</p>
-              <span className="text-link">Explore this view ↗</span>
             </a>
           ))}
         </div>
       )}
+      <dialog
+        ref={dialog}
+        className="collection-dialog"
+        aria-labelledby={titleId}
+        data-lenis-prevent
+        onClose={close}
+        onClick={(event) => {
+          if (event.target === event.currentTarget) dialog.current?.close();
+        }}
+      >
+        <button
+          className="collection-dialog__close"
+          type="button"
+          aria-label="Close photograph"
+          autoFocus
+          onClick={() => dialog.current?.close()}
+        >
+          Close <span aria-hidden="true">×</span>
+        </button>
+        {item && (
+          <div className="collection-dialog__layout">
+            <div className="collection-dialog__image">
+              <img src={item.fullSrc} alt={item.alt} width="984" height="655" />
+            </div>
+            <div className="collection-dialog__copy">
+              <p className="eyebrow">{item.subtitle}</p>
+              <h2 id={titleId}>{item.title}</h2>
+              <p>
+                {item.alt}.<br />
+                {details.provenance}
+              </p>
+              <div className="collection-dialog__inquiry">
+                <h3>{details.heading}</h3>
+                <p>{details.description}</p>
+                <a className="button button-dark" href="tel:+12069196886">
+                  Ask Marci about homes <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+      </dialog>
     </div>
   );
 }
