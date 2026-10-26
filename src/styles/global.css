@@ -617,20 +617,25 @@ p + p {
   margin-top: 22px;
 }
 .affiliations {
+  padding-block: clamp(48px, 6vw, 88px);
+  background: #FFFFFF;
+  border-block: 1px solid var(--line);
+  text-align: center;
+}
+.partner-logos {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(32px, 6vw, 96px);
+  margin-top: 36px;
 }
 .affiliations img {
-  width: 115px;
-  height: 115px;
+  width: 160px;
+  height: 140px;
   object-fit: contain;
-  mix-blend-mode: multiply;
 }
 .affiliations .eyebrow {
-  margin-right: auto;
   color: #555b4e;
 }
 .lifestyle-heading {
@@ -1125,19 +1130,12 @@ p + p {
   .about-copy h2 {
     font-size: 58px;
   }
-  .affiliations {
-    margin-top: 65px;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .affiliations .eyebrow {
-    width: 100%;
-    margin: 0;
-    font-size: 9px;
+  .partner-logos {
+    gap: 28px;
   }
   .affiliations img {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 110px;
   }
   .lifestyle-heading {
     display: block;

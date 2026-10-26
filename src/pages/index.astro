@@ -6,6 +6,10 @@ import ProfileCard from "../components/ProfileCard";
 import PropertyCollection from "../components/PropertyCollection";
 import Reviews from "../components/Reviews.astro";
 import PropertySearch from "../components/PropertySearch.astro";
+import partnerHousing from "../../Images/PartnersLogo/Partners1.svg";
+import partnerRidge from "../../Images/PartnersLogo/Partners2.svg";
+import partnerChamber from "../../Images/PartnersLogo/Partners3.svg";
+import partnerRealtor from "../../Images/PartnersLogo/Partners4.svg";
 import { assets, collection, collectionDetails } from "../data/assets";
 const portraitSizes = await Promise.all(
   [320, 480, 730].map((width) =>
@@ -371,20 +375,17 @@ const items = await Promise.all(
           <div class="signature">Marci Metzger</div>
         </div>
       </div>
-      <div class="affiliations wrap" id="affiliations">
-        <p class="eyebrow">
-          LOCAL CONNECTIONS.
-          <br />
-          SHARED STANDARDS.
-        </p>
-        {[assets.ridge, assets.chamber, assets.realtor].map((asset) => (
-          <Image
-            src={asset.image}
-            alt={asset.alt}
-            width={140}
-            height={140}
-            loading="lazy"
-          />
+    </section>
+    <section class="affiliations wrap" id="affiliations" aria-labelledby="partners-title">
+      <h2 class="eyebrow" id="partners-title">LOCAL CONNECTIONS. SHARED STANDARDS.</h2>
+      <div class="partner-logos">
+        {[
+          { image: partnerHousing, name: "Equal Housing Opportunity" },
+          { image: partnerRidge, name: "The Ridge Realty Group" },
+          { image: partnerChamber, name: "Pahrump Valley Chamber of Commerce" },
+          { image: partnerRealtor, name: "REALTOR" },
+        ].map((partner) => (
+          <Image src={partner.image} alt={partner.name} width={160} height={140} loading="lazy" />
         ))}
       </div>
     </section>
