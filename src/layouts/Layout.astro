@@ -1,24 +1,112 @@
 ---
-import '@fontsource/dm-sans/400.css';
-import '@fontsource/dm-sans/500.css';
-import '@fontsource/cormorant-garamond/400.css';
-import '@fontsource/cormorant-garamond/400-italic.css';
-import '../styles/global.css';
-const {title='Marci Metzger | A Doorway to Exceptional Living', description='Discover a different perspective on home with Marci Metzger of The Ridge Realty Group in Pahrump, Nevada. Explore the collection and start a conversation.', image='/og-image.jpg'}=Astro.props;
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
+import "@fontsource/cormorant-garamond/400.css";
+import "@fontsource/cormorant-garamond/400-italic.css";
+import "../styles/global.css";
+const {
+  title = "Marci Metzger | A Doorway to Exceptional Living",
+  description = "Discover a different perspective on home with Marci Metzger of The Ridge Realty Group in Pahrump, Nevada. Explore the collection and start a conversation.",
+  image = "/og-image.jpg",
+} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="theme-color" content="#eeece5"/><title>{title}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/><link rel="icon" href="/favicon.svg" type="image/svg+xml"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><meta property="og:url" content={canonical}/><meta property="og:image" content={new URL(image,Astro.site)}/><meta name="twitter:card" content="summary_large_image"/><script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'RealEstateAgent',name:'Marci Metzger — The Ridge Realty Group',telephone:'+1-206-919-6886',url:Astro.site?.href,address:{'@type':'PostalAddress',streetAddress:'3190 HW-160, Suite F',addressLocality:'Pahrump',addressRegion:'NV',postalCode:'89048',addressCountry:'US'}})}/></head><body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><a class="brand" href="/"><span>MARCI METZGER</span><small>THE RIDGE REALTY GROUP</small></a><nav aria-label="Main navigation"><a href="/#collection">The collection</a><a href="/#about">Meet Marci</a><a href="/#contact" class="nav-contact">Let’s talk <span aria-hidden="true">↗</span></a></nav></header>
-<slot/>
-<script>
-import Lenis from 'lenis';
-const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-let lenis: Lenis | undefined;
-function setupScroll(){lenis?.destroy();lenis=undefined;if(!reduced.matches)lenis=new Lenis({autoRaf:true,anchors:true,duration:0.95});}
-setupScroll();reduced.addEventListener('change',setupScroll);
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){const el=entry.target as HTMLElement;if(!reduced.matches)el.animate([{opacity:0,transform:'translateY(28px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'cubic-bezier(.2,.7,.2,1)'});observer.unobserve(el);}}),{threshold:0.12});
-document.querySelectorAll('[data-reveal]').forEach(el=>observer.observe(el));
-window.addEventListener('pagehide',()=>{lenis?.destroy();observer.disconnect();reduced.removeEventListener('change',setupScroll);},{once:true});
-</script>
-</body></html>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eeece5" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        name: "Marci Metzger — The Ridge Realty Group",
+        telephone: "+1-206-919-6886",
+        url: Astro.site?.href,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "3190 HW-160, Suite F",
+          addressLocality: "Pahrump",
+          addressRegion: "NV",
+          postalCode: "89048",
+          addressCountry: "US",
+        },
+      })}
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span>MARCI METZGER</span>
+        <small>THE RIDGE REALTY GROUP</small>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/#collection">The collection</a>
+        <a href="/#about">Meet Marci</a>
+        <a href="/#contact" class="nav-contact">
+          Let’s talk <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+    <slot />
+    <script>
+      import Lenis from "lenis";
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+      let lenis: Lenis | undefined;
+      function setupScroll() {
+        lenis?.destroy();
+        lenis = undefined;
+        if (!reduced.matches)
+          lenis = new Lenis({ autoRaf: true, anchors: true, duration: 0.95 });
+      }
+      setupScroll();
+      reduced.addEventListener("change", setupScroll);
+      const observer = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const el = entry.target as HTMLElement;
+              if (!reduced.matches)
+                el.animate(
+                  [
+                    { opacity: 0, transform: "translateY(28px)" },
+                    { opacity: 1, transform: "translateY(0)" },
+                  ],
+                  { duration: 850, easing: "cubic-bezier(.2,.7,.2,1)" },
+                );
+              observer.unobserve(el);
+            }
+          }),
+        { threshold: 0.12 },
+      );
+      document
+        .querySelectorAll("[data-reveal]")
+        .forEach((el) => observer.observe(el));
+      window.addEventListener(
+        "pagehide",
+        () => {
+          lenis?.destroy();
+          observer.disconnect();
+          reduced.removeEventListener("change", setupScroll);
+        },
+        { once: true },
+      );
+    </script>
+  </body>
+</html>

@@ -1,3 +1,7 @@
-import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
-export default defineConfig({ integrations: [react()], devToolbar: { enabled: false }, site: 'https://tarlac-marcimetzger-homeproject.vercel.app' });
+import { defineConfig } from "astro/config";
+import react from "@astrojs/react";
+export default defineConfig({
+  integrations: [react()],
+  devToolbar: { enabled: false },
+  site: "https://tarlac-marcimetzger-homeproject.vercel.app",
+});

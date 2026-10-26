@@ -1,7 +1,64 @@
-import {chromium} from '@playwright/test';
-import assert from 'node:assert/strict';
-const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||chromium.executablePath()});
-try{
- const context=await browser.newContext({viewport:{width:1440,height:1000}});const page=await context.newPage();await page.goto('http://127.0.0.1:4322/',{waitUntil:'domcontentloaded'});await page.screenshot({path:'/tmp/marci-qa/doors.png'});await page.waitForTimeout(650);await page.screenshot({path:'/tmp/marci-qa/doors-opening.png'});await page.getByRole('button',{name:'Skip intro'}).click();assert.equal(await page.locator('#doorway').isVisible(),false);await page.screenshot({path:'/tmp/marci-qa/desktop-full.png',fullPage:true});await context.close();
- const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});const p=await mobile.newPage();await p.goto('http://127.0.0.1:4322/');await p.waitForTimeout(2600);await p.locator('#collection').scrollIntoViewIfNeeded();await p.locator('.circular-carousel[data-ready]').waitFor();await p.waitForTimeout(600);const before=await p.locator('.active-caption h3').textContent();const box=await p.locator('.circular-carousel').boundingBox();const cdp=await mobile.newCDPSession(p);let x=box.x+box.width*.8;const y=box.y+box.height*.45;await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});for(let i=1;i<=14;i++){await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x-i*16,y}]});await p.waitForTimeout(16);}await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await p.waitForTimeout(1800);assert.notEqual(await p.locator('.active-caption h3').textContent(),before,'touch swipe changes active photograph');await p.screenshot({path:'/tmp/marci-qa/mobile-full.png',fullPage:true});console.log('Door skip and emulated touch swipe passed');await mobile.close();
-}finally{await browser.close();}
+import { chromium } from "@playwright/test";
+import assert from "node:assert/strict";
+const browser = await chromium.launch({
+  executablePath: process.env.CHROME_PATH || chromium.executablePath(),
+});
+try {
+  const context = await browser.newContext({
+    viewport: { width: 1440, height: 1000 },
+  });
+  const page = await context.newPage();
+  await page.goto("http://127.0.0.1:4322/", { waitUntil: "domcontentloaded" });
+  await page.screenshot({ path: "/tmp/marci-qa/doors.png" });
+  await page.waitForTimeout(650);
+  await page.screenshot({ path: "/tmp/marci-qa/doors-opening.png" });
+  await page.getByRole("button", { name: "Skip intro" }).click();
+  assert.equal(await page.locator("#doorway").isVisible(), false);
+  await page.screenshot({
+    path: "/tmp/marci-qa/desktop-full.png",
+    fullPage: true,
+  });
+  await context.close();
+  const mobile = await browser.newContext({
+    viewport: { width: 390, height: 844 },
+    isMobile: true,
+    hasTouch: true,
+  });
+  const p = await mobile.newPage();
+  await p.goto("http://127.0.0.1:4322/");
+  await p.waitForTimeout(2600);
+  await p.locator("#collection").scrollIntoViewIfNeeded();
+  await p.locator(".circular-carousel[data-ready]").waitFor();
+  await p.waitForTimeout(600);
+  const before = await p.locator(".active-caption h3").textContent();
+  const box = await p.locator(".circular-carousel").boundingBox();
+  const cdp = await mobile.newCDPSession(p);
+  let x = box.x + box.width * 0.8;
+  const y = box.y + box.height * 0.45;
+  await cdp.send("Input.dispatchTouchEvent", {
+    type: "touchStart",
+    touchPoints: [{ x, y }],
+  });
+  for (let i = 1; i <= 14; i++) {
+    await cdp.send("Input.dispatchTouchEvent", {
+      type: "touchMove",
+      touchPoints: [{ x: x - i * 16, y }],
+    });
+    await p.waitForTimeout(16);
+  }
+  await cdp.send("Input.dispatchTouchEvent", {
+    type: "touchEnd",
+    touchPoints: [],
+  });
+  await p.waitForTimeout(1800);
+  assert.notEqual(
+    await p.locator(".active-caption h3").textContent(),
+    before,
+    "touch swipe changes active photograph",
+  );
+  await p.screenshot({ path: "/tmp/marci-qa/mobile-full.png", fullPage: true });
+  console.log("Door skip and emulated touch swipe passed");
+  await mobile.close();
+} finally {
+  await browser.close();
+}

@@ -1,5 +1,64 @@
 ---
-import {Image} from 'astro:assets';
-import {assets} from '../data/assets';
+import { Image } from "astro:assets";
+import { assets } from "../data/assets";
 ---
-<footer class="footer wrap"><div class="footer-top"><a href="/" class="footer-brand"><Image src={assets.wordmark.image} alt={assets.wordmark.alt} width={280} loading="lazy"/></a><p>Rooted in Pahrump.<br/>Focused on your next chapter.</p><a class="text-link" href="#main">Back to top ↑</a></div><div class="footer-bottom"><span>© {new Date().getFullYear()} Marci Metzger</span><div class="socials"><a href="https://www.facebook.com/MarciHomes/" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://www.instagram.com/marcimetzger_theridge/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump" target="_blank" rel="noopener noreferrer">Yelp ↗</a></div><Image src={assets.housing.image} alt={assets.housing.alt} width={40} loading="lazy"/></div></footer>
+
+<footer class="footer wrap">
+  <div class="footer-top">
+    <a href="/" class="footer-brand">
+      <Image
+        src={assets.wordmark.image}
+        alt={assets.wordmark.alt}
+        width={280}
+        loading="lazy"
+      />
+    </a>
+    <p>
+      Rooted in Pahrump.
+      <br />
+      Focused on your next chapter.
+    </p>
+    <a class="text-link" href="#main">
+      Back to top ↑
+    </a>
+  </div>
+  <div class="footer-bottom">
+    <span>© {new Date().getFullYear()} Marci Metzger</span>
+    <div class="socials">
+      <a
+        href="https://www.facebook.com/MarciHomes/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook ↗
+      </a>
+      <a
+        href="https://www.instagram.com/marcimetzger_theridge/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram ↗
+      </a>
+      <a
+        href="https://www.linkedin.com/in/marci-metzger-30642496/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn ↗
+      </a>
+      <a
+        href="https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Yelp ↗
+      </a>
+    </div>
+    <Image
+      src={assets.housing.image}
+      alt={assets.housing.alt}
+      width={40}
+      loading="lazy"
+    />
+  </div>
+</footer>
