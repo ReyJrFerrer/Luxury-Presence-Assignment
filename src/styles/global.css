@@ -322,50 +322,6 @@ p + p {
   margin-right: 12px;
   margin-top: 80px;
 }
-.portrait-card {
-  background: #fff;
-  padding: 12px;
-  display: block;
-  position: relative;
-  z-index: 1;
-  color: var(--ink);
-  transform: rotate(2deg);
-  transition: transform 0.5s;
-}
-.portrait-card:hover {
-  transform: rotate(0);
-}
-.portrait-image {
-  aspect-ratio: 1/1.08;
-  overflow: hidden;
-}
-.portrait-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 35%;
-}
-.portrait-label {
-  padding: 17px 5px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-.portrait-label strong {
-  font-family: var(--serif);
-  font-size: 26px;
-  font-weight: 400;
-}
-.portrait-label div > span {
-  display: block;
-  font-size: 7px;
-  letter-spacing: 0.14em;
-  margin-top: 3px;
-}
-.portrait-label > span {
-  font-size: 24px;
-}
 .black-square {
   position: absolute;
   background: #171a17;
@@ -711,41 +667,15 @@ p + p {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10vw;
+  gap: clamp(32px, 4vw, 64px);
   align-items: center;
 }
 .about-portrait {
   position: relative;
-  padding: 16px;
-  background: #f9f8f2;
-  max-width: 480px;
-  margin: 0 20px 25px 0;
-}
-.about-portrait > img {
   width: 100%;
-  aspect-ratio: 0.95;
-  object-fit: cover;
-}
-.about-stamp {
-  width: 155px;
-  height: 155px;
-  background: #1e241e;
-  color: white;
-  position: absolute;
-  right: -35px;
-  bottom: -35px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 9px;
-  line-height: 1.7;
-  letter-spacing: 0.1em;
-}
-.about-stamp > span:last-child {
-  align-self: end;
-  font-size: 28px;
-  line-height: 1;
+  max-width: 480px;
+  justify-self: end;
+  margin: 0 0 25px;
 }
 .about-copy h2 {
   margin: 25px 0;
@@ -1119,7 +1049,7 @@ p + p {
     height: 430px;
   }
   .about-grid {
-    gap: 8vw;
+    gap: 4vw;
   }
   .about-copy h2 {
     font-size: 58px;
@@ -1200,21 +1130,6 @@ p + p {
   .portrait-composition {
     width: 242px;
     margin: 0 12px 0 auto;
-  }
-  .portrait-card {
-    padding: 9px;
-  }
-  .portrait-image {
-    aspect-ratio: 1.2;
-  }
-  .portrait-label {
-    padding: 11px 3px 4px;
-  }
-  .portrait-label strong {
-    font-size: 23px;
-  }
-  .portrait-label div > span {
-    font-size: 6px;
   }
   .black-square {
     width: 145px;
@@ -1354,19 +1269,10 @@ p + p {
     gap: 70px;
   }
   .about-portrait {
+    width: calc(100% - 30px);
+    justify-self: start;
     margin-right: 30px;
     max-width: 430px;
-  }
-  .about-portrait > img {
-    aspect-ratio: 1.1;
-    object-position: 50% 30%;
-  }
-  .about-stamp {
-    right: -25px;
-    bottom: -25px;
-    width: 135px;
-    height: 135px;
-    font-size: 8px;
   }
   .about-copy h2 {
     font-size: 58px;
@@ -1505,9 +1411,6 @@ p + p {
   }
   .doorway {
     display: none !important;
-  }
-  .portrait-card {
-    transform: none;
   }
   .button:hover {
     transform: none;

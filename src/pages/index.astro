@@ -2,8 +2,17 @@
 import { Image, getImage } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
+import ProfileCard from "../components/ProfileCard";
 import PropertyCollection from "../components/PropertyCollection";
 import { assets, collection, gallery } from "../data/assets";
+const portraitSizes = await Promise.all(
+  [320, 480, 730].map((width) =>
+    getImage({ src: assets.portrait.image, width, format: "webp" }),
+  ),
+);
+const portraitSrcSet = portraitSizes
+  .map((image, index) => `${image.src} ${[320, 480, 730][index]}w`)
+  .join(", ");
 const items = await Promise.all(
   collection.map(async (item) => ({
     src: (await getImage({ src: item.asset.image, width: 800, format: "webp" }))
@@ -65,24 +74,25 @@ const items = await Promise.all(
             </span>
             <span class="square-arrow">↗</span>
           </div>
-          <a class="portrait-card" href="#about">
-            <div class="portrait-image">
-              <Image
-                src={assets.portrait.image}
-                alt={assets.portrait.alt}
-                widths={[320, 480, 730]}
-                sizes="(max-width:600px) 70vw, 28vw"
-                loading="eager"
-              />
-            </div>
-            <div class="portrait-label">
-              <div>
-                <strong>Marci Metzger</strong>
-                <span>YOUR REAL ESTATE PROFESSIONAL</span>
-              </div>
-              <span aria-hidden="true">↗</span>
-            </div>
-          </a>
+          <ProfileCard
+            client:load
+            className="marci-profile marci-profile--hero"
+            avatarUrl={portraitSizes[2].src}
+            avatarSrcSet={portraitSrcSet}
+            avatarSizes="(max-width:700px) 65vw, 28vw"
+            loading="eager"
+            name="Marci Metzger"
+            title="The Ridge Realty Group"
+            contactText="Meet Marci"
+            contactHref="#about"
+            theme="light"
+            radius={14}
+            holo={0.2}
+            glare={0.3}
+            tiltStrength={9}
+            parallax={6}
+            intro={false}
+          />
         </div>
       </div>
       <div class="hero-bottom wrap">
@@ -310,24 +320,26 @@ const items = await Promise.all(
     <section class="about section-space" id="about">
       <div class="wrap about-grid">
         <div class="about-portrait" data-reveal>
-          <Image
-            src={assets.portrait.image}
-            alt="Meet Marci Metzger"
-            widths={[400, 600, 730]}
-            sizes="(max-width:700px) 80vw, 38vw"
-            loading="lazy"
+          <ProfileCard
+            client:visible
+            className="marci-profile marci-profile--about"
+            avatarUrl={portraitSizes[2].src}
+            avatarSrcSet={portraitSrcSet}
+            avatarSizes="(max-width:700px) 80vw, 38vw"
+            name="Marci Metzger"
+            title="Your real estate professional"
+            contactText="Let’s talk"
+            contactHref="tel:+12069196886"
+            theme="light"
+            radius={16}
+            holo={0.2}
+            glare={0.3}
+            tiltStrength={9}
+            parallax={6}
+            intro={false}
           />
-          <div class="about-stamp">
-            <span>
-              PERSONAL.
-              <br />
-              EXPERIENCED.
-              <br />
-              BY YOUR SIDE.
-            </span>
-            <span aria-hidden="true">↗</span>
-          </div>
         </div>
+
         <div class="about-copy" data-reveal>
           <p class="eyebrow">05 / YOUR REAL ESTATE PROFESSIONAL</p>
           <h2>
@@ -420,7 +432,6 @@ const items = await Promise.all(
           </article>
         ))}
       </div>
-     
     </section>
     <section class="contact section-space" id="contact">
       <span id="contacts" class="anchor-alias"></span>
@@ -461,7 +472,7 @@ const items = await Promise.all(
             >
               Visit the office ↗
             </a>
-             <div class="office-map">
+            <div class="office-map">
               <iframe
                 src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s3190+HW-160,+Suite+F,+Pahrump,+Nevada+89048!6i16"
                 title="Google map showing the office at 3190 HW-160, Suite F, Pahrump, Nevada"
@@ -472,7 +483,6 @@ const items = await Promise.all(
               </iframe>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
