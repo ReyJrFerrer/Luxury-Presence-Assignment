@@ -18,6 +18,10 @@ import image_realtor from "../../Images/RealtoLogo.webp";
 import image_chamber from "../../Images/PahrumpValleyLogo.webp";
 import image_housing from "../../Images/EqualHousingOpportunity.webp";
 import image_wordmark from "../../Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/qt=q_95_ie-d.webp";
+import image_facebook from "../../Images/social-media-icons/facebook.svg";
+import image_instagram from "../../Images/social-media-icons/instagram.svg";
+import image_linkedin from "../../Images/social-media-icons/linkedin.svg";
+import image_yelp from "../../Images/social-media-icons/yelp.svg";
 export const assets = {
   hero: {
     source: "Images/FormsBackground.jpg",
@@ -201,6 +205,32 @@ export const assets = {
     propertyAssociation: null,
   },
 } as const;
+export const socials = [
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/MarciHomes/",
+    source: "Images/social-media-icons/facebook.svg",
+    image: image_facebook,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/marcimetzger_theridge/",
+    source: "Images/social-media-icons/instagram.svg",
+    image: image_instagram,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/marci-metzger-30642496/",
+    source: "Images/social-media-icons/linkedin.svg",
+    image: image_linkedin,
+  },
+  {
+    label: "Yelp",
+    href: "https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump",
+    source: "Images/social-media-icons/yelp.svg",
+    image: image_yelp,
+  },
+] as const;
 export const collection = [
   {
     slug: "valley",

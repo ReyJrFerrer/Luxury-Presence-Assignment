@@ -1428,5 +1428,45 @@
     "sha": "3b8ad8a1b090bb86986a48cfad2cd9f0480a4492781b98a385d81d1abc4e8d74",
     "role": "service",
     "decision": "Used: lifestyle"
+  },
+  {
+    "id": 143,
+    "source": "Images/social-media-icons/facebook.png",
+    "width": 324,
+    "height": 324,
+    "bytes": 13651,
+    "sha": "7eb3b62b96a6bc6eb22173129c6fddcb7615b0f17f2e6472b03d61049b2932f7",
+    "role": "facebook",
+    "decision": "Used: footer socials"
+  },
+  {
+    "id": 144,
+    "source": "Images/social-media-icons/instagram.png",
+    "width": 324,
+    "height": 324,
+    "bytes": 80241,
+    "sha": "80ccf6943832965fb737e9e46055179dada7738a3d91338318f4575aaac1a097",
+    "role": "instagram",
+    "decision": "Used: footer socials"
+  },
+  {
+    "id": 145,
+    "source": "Images/social-media-icons/linkedin.png",
+    "width": 324,
+    "height": 324,
+    "bytes": 11499,
+    "sha": "e2205d19dc36782cc8aafaecc6e813a0a30f593214bc084f2fa4750fe9047b6f",
+    "role": "linkedin",
+    "decision": "Used: footer socials"
+  },
+  {
+    "id": 146,
+    "source": "Images/social-media-icons/yelp.png",
+    "width": 324,
+    "height": 324,
+    "bytes": 14645,
+    "sha": "168188376e00bd2c49ae4dd7063bdecafb2bdea923e96ceef8533bcf185b1f2b",
+    "role": "yelp",
+    "decision": "Used: footer socials"
   }
 ]

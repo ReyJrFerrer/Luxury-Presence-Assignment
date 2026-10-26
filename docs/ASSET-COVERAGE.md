@@ -1,6 +1,6 @@
 # Asset coverage
 
-Every one of the 143 valid source image files is recorded in `asset-inventory.json` with dimensions, bytes, SHA-256, semantic subject and display decision. Original files remain untouched. Twenty canonical subjects are imported statically and optimized by Astro. Repeated resolutions/crops are not different properties.
+Every one of the 147 valid source image files is recorded in `asset-inventory.json` with dimensions, bytes, SHA-256, semantic subject and display decision. Original files remain untouched. Twenty-four canonical subjects are imported statically and optimized by Astro. Repeated resolutions/crops are not different properties.
 
 | Canonical source | Final placement |
 | --- | --- |
@@ -24,7 +24,11 @@ Every one of the 143 valid source image files is recorded in `asset-inventory.js
 | RealtoLogo.webp | Affiliations |
 | EqualHousingOpportunity.webp | Footer |
 | Archived qt=q_95_ie-d.webp | Original Marci Metzger Homes wordmark in footer |
+| social-media-icons/facebook.png | Footer social link icon |
+| social-media-icons/instagram.png | Footer social link icon |
+| social-media-icons/linkedin.png | Footer social link icon |
+| social-media-icons/yelp.png | Footer social link icon |
 
-Exceptions: 97 archived size/crop variants share the same 20 subjects and intentionally use their canonical representative. Twenty-four `vt*.webp` map tiles, `spotlight-poi3_hdpi_ie-d.png` map marker, and `transparent_ie-d.png` browser spacer are excluded because they are incomplete interface artifacts, not standalone photography. No image file was corrupt. Property associations, addresses and availability remain unknown; descriptive titles do not imply listing identities.
+Exceptions: 97 archived size/crop variants share the same 20 photographic/logo subjects and intentionally use their canonical representative. Twenty-four `vt*.webp` map tiles, `spotlight-poi3_hdpi_ie-d.png` map marker, and `transparent_ie-d.png` browser spacer are excluded because they are incomplete interface artifacts, not standalone photography. No image file was corrupt. Property associations, addresses and availability remain unknown; descriptive titles do not imply listing identities.
 
 The contact sheet was reviewed at `/tmp/asset-contact-sheet.jpg`. The journal expands with native `<details>` and opens photographs in a keyboard-dismissable dialog; without JavaScript, image links still work.

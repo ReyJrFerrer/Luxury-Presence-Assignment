@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import { assets } from "../data/assets";
+import { assets, socials } from "../data/assets";
 ---
 
 <footer class="footer wrap">
@@ -25,34 +25,16 @@ import { assets } from "../data/assets";
   <div class="footer-bottom">
     <span>© {new Date().getFullYear()} Marci Metzger</span>
     <div class="socials">
-      <a
-        href="https://www.facebook.com/MarciHomes/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Facebook ↗
-      </a>
-      <a
-        href="https://www.instagram.com/marcimetzger_theridge/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram ↗
-      </a>
-      <a
-        href="https://www.linkedin.com/in/marci-metzger-30642496/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn ↗
-      </a>
-      <a
-        href="https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Yelp ↗
-      </a>
+      {socials.map((social) => (
+        <a
+          href={social.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${social.label} (opens in a new tab)`}
+        >
+          <Image src={social.image} alt="" width={22} loading="lazy" />
+        </a>
+      ))}
     </div>
     <Image
       src={assets.housing.image}

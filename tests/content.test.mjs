@@ -17,7 +17,7 @@ test("every supplied image is decoded and has an explicit display decision", () 
   }
   assert.equal(
     inventory.filter((r) => r.decision.startsWith("Used:")).length,
-    20,
+    24,
   );
 });
 test("every canonical subject is in the typed image manifest", () => {
