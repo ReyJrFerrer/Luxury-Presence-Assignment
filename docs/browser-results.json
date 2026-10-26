@@ -1,0 +1,44 @@
+[
+  {
+    "name": "desktop",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "intro": "pass",
+    "overflow": "pass",
+    "carousel": "controls, keyboard, pointer drag pass",
+    "dialog": "pass",
+    "detailPage": "pass"
+  },
+  {
+    "name": "tablet",
+    "viewport": [
+      820,
+      1180
+    ],
+    "intro": "pass",
+    "overflow": "pass",
+    "carousel": "controls, keyboard, pointer drag pass",
+    "dialog": "pass",
+    "detailPage": "pass"
+  },
+  {
+    "name": "mobile",
+    "viewport": [
+      390,
+      844
+    ],
+    "intro": "pass",
+    "overflow": "pass",
+    "carousel": "controls, keyboard, pointer drag pass",
+    "dialog": "pass",
+    "detailPage": "pass"
+  },
+  {
+    "reducedMotion": "pass"
+  },
+  {
+    "noJavaScript": "hero and all collection links available"
+  }
+]

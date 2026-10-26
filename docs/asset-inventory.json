@@ -1,0 +1,1432 @@
+[
+  {
+    "id": 0,
+    "source": "Images/Don'tJustListIt.webp",
+    "width": 1200,
+    "height": 600,
+    "bytes": 88900,
+    "sha": "83b37416417af680d82b15894f5227d555103a2ef1df23988f44e3d5433a0f62",
+    "role": "home",
+    "decision": "Used: perspective"
+  },
+  {
+    "id": 1,
+    "source": "Images/EqualHousingOpportunity.webp",
+    "width": 199,
+    "height": 200,
+    "bytes": 10220,
+    "sha": "fb0d4dc7f11ff0adddf172a0ae3cd98120408d73ffae49baa819fbe26fa18ec2",
+    "role": "housing",
+    "decision": "Used: footer"
+  },
+  {
+    "id": 2,
+    "source": "Images/FormsBackground.jpg",
+    "width": 2121,
+    "height": 1414,
+    "bytes": 361975,
+    "sha": "d3cef3fc94713da6eae497c4c11264710c76593be6b807417ba995d9b6059080",
+    "role": "hero",
+    "decision": "Used: arrival"
+  },
+  {
+    "id": 3,
+    "source": "Images/GetItSold.webp",
+    "width": 1200,
+    "height": 600,
+    "bytes": 88016,
+    "sha": "d5f2033684ca0ad5ac6204fdd90266bae1d0ae64b23ac0960ff80954ef84ea2d",
+    "role": "kitchen",
+    "decision": "Used: spotlights"
+  },
+  {
+    "id": 4,
+    "source": "Images/GuideToBuyers.webp",
+    "width": 1200,
+    "height": 600,
+    "bytes": 180458,
+    "sha": "caee40c31cc9b94676aa32d7d2cd5863ed04fed508ed4470ae02e885cea38818",
+    "role": "keys",
+    "decision": "Used: buyer services"
+  },
+  {
+    "id": 5,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/Untitled_002_ie-d.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 169850,
+    "sha": "195ed57790fc1c25591a3aebb30f975d9395f67dab456eb6e9bee31728d6d552",
+    "role": "courts",
+    "decision": "Alternate resolution or crop of courts; canonical image used"
+  },
+  {
+    "id": 6,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/Untitled_003_ie-d.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 125002,
+    "sha": "9b320aa6b55ff21305340a273c9a364dba2a0ee6c9e9145b62db61933b04c39e",
+    "role": "greens",
+    "decision": "Alternate resolution or crop of greens; canonical image used"
+  },
+  {
+    "id": 7,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/Untitled_004_ie-d.webp",
+    "width": 1024,
+    "height": 682,
+    "bytes": 139388,
+    "sha": "51705951ef2c7da8ed4530df201ac0cc955d8213a5174bc8fd61079946237320",
+    "role": "terrace",
+    "decision": "Alternate resolution or crop of terrace; canonical image used"
+  },
+  {
+    "id": 8,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/Untitled_005_ie-d.webp",
+    "width": 1024,
+    "height": 682,
+    "bytes": 147852,
+    "sha": "422e9ffae311aa5a9ac1fb41ef82402f92e5246051809e9ccec034c61fd3397d",
+    "role": "grounds",
+    "decision": "Alternate resolution or crop of grounds; canonical image used"
+  },
+  {
+    "id": 9,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/Untitled_006_ie-d.webp",
+    "width": 1024,
+    "height": 682,
+    "bytes": 169716,
+    "sha": "26d4441cd4085c3fc606b1ffd8e9c61ff910d5bab99a5e48a13d516c91d59826",
+    "role": "rooftops",
+    "decision": "Alternate resolution or crop of rooftops; canonical image used"
+  },
+  {
+    "id": 10,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/Untitled_ie-d.webp",
+    "width": 1024,
+    "height": 682,
+    "bytes": 179964,
+    "sha": "e8eacce482456d27be11b25d9464cf6d30439c69f6a7ee1485bf4bb1b7395e60",
+    "role": "valley",
+    "decision": "Alternate resolution or crop of valley; canonical image used"
+  },
+  {
+    "id": 11,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=t_0_,l_0.05_,w_99.9_,h_99_ie-d.webp",
+    "width": 1022,
+    "height": 681,
+    "bytes": 115114,
+    "sha": "91cb325a39f8980d09c501cb424b1ff1b9f21e30f7be48f552bf90ba2c7e6243",
+    "role": "windows",
+    "decision": "Alternate resolution or crop of windows; canonical image used"
+  },
+  {
+    "id": 12,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_100,h_100_002_ie-d.webp",
+    "width": 100,
+    "height": 100,
+    "bytes": 3394,
+    "sha": "bb23a1cb8b617b1d412bc111ff6828ccb083f126c991591b3af6f1327203dd46",
+    "role": "ridge",
+    "decision": "Alternate resolution or crop of ridge; canonical image used"
+  },
+  {
+    "id": 13,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_100,h_100_ie-d.webp",
+    "width": 100,
+    "height": 100,
+    "bytes": 3054,
+    "sha": "c2e5a9bc0ae4465de680b6911e0bd3d50515d10b951d345f69323de7f444784b",
+    "role": "chamber",
+    "decision": "Alternate resolution or crop of chamber; canonical image used"
+  },
+  {
+    "id": 14,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_1095,h_1095_002_ie-d.webp",
+    "width": 1095,
+    "height": 1095,
+    "bytes": 65542,
+    "sha": "99532fd23ce30172f52af5ede6b7cc5aa80ca69ed07b3d87d0a571d3fa01ae55",
+    "role": "service",
+    "decision": "Alternate resolution or crop of service; canonical image used"
+  },
+  {
+    "id": 15,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_1095,h_1095_003_ie-d.webp",
+    "width": 1095,
+    "height": 1095,
+    "bytes": 177240,
+    "sha": "41d3c594e084b5fbf26e30004febadf14ace69f730c3956ddb4aa36ec1b584fe",
+    "role": "architecture",
+    "decision": "Alternate resolution or crop of architecture; canonical image used"
+  },
+  {
+    "id": 16,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_1095,h_1095_ie-d.webp",
+    "width": 1095,
+    "height": 1095,
+    "bytes": 45872,
+    "sha": "c18b75015aaf3c061202e51b07651b7d83f539bcb7b0c503aa606da2a290fb42",
+    "role": "interior",
+    "decision": "Alternate resolution or crop of interior; canonical image used"
+  },
+  {
+    "id": 17,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_1200,h_600_ie-d.webp",
+    "width": 1200,
+    "height": 600,
+    "bytes": 88900,
+    "sha": "83b37416417af680d82b15894f5227d555103a2ef1df23988f44e3d5433a0f62",
+    "role": "home",
+    "decision": "Alternate resolution or crop of home; canonical image used"
+  },
+  {
+    "id": 18,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_1209,h_605_ie-d.webp",
+    "width": 1209,
+    "height": 605,
+    "bytes": 90198,
+    "sha": "8939cbfc778391f8b5e33877c3056cbc5013ac8b3e21a1e562e8833b2900fcc4",
+    "role": "home",
+    "decision": "Alternate resolution or crop of home; canonical image used"
+  },
+  {
+    "id": 19,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_1800,h_900_ie-d.webp",
+    "width": 1800,
+    "height": 900,
+    "bytes": 141020,
+    "sha": "2ca0322dbee7f8b49aaf76b34366898fa69c10e8ad48026b4d649501f9f343fb",
+    "role": "home",
+    "decision": "Alternate resolution or crop of home; canonical image used"
+  },
+  {
+    "id": 20,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_200,h_200_002_ie-d.webp",
+    "width": 200,
+    "height": 200,
+    "bytes": 6776,
+    "sha": "9fe8ce9d88460ec7de7d3bf70f0ef46bed25da4dbffee31e642e01aaf9797255",
+    "role": "ridge",
+    "decision": "Alternate resolution or crop of ridge; canonical image used"
+  },
+  {
+    "id": 21,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_200,h_200_ie-d.webp",
+    "width": 200,
+    "height": 200,
+    "bytes": 7380,
+    "sha": "8cc08a93aa4b3a92add66b635dcff3c85b9a5f96498e10133c79072191475e38",
+    "role": "chamber",
+    "decision": "Alternate resolution or crop of chamber; canonical image used"
+  },
+  {
+    "id": 22,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_300,h_300_ie-d.webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 10078,
+    "sha": "4cc0be7ddf11f85e19ab494cd2819af4224f689c7da4519d8e945f52e20d87f4",
+    "role": "ridge",
+    "decision": "Alternate resolution or crop of ridge; canonical image used"
+  },
+  {
+    "id": 23,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_365,h_365_002_ie-d.webp",
+    "width": 365,
+    "height": 365,
+    "bytes": 25236,
+    "sha": "2ca27f450129447a05d05f5fdc64cb71e4d0b517712a8dbc3881a5a48cd8845c",
+    "role": "architecture",
+    "decision": "Alternate resolution or crop of architecture; canonical image used"
+  },
+  {
+    "id": 24,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_365,h_365_003_ie-d.webp",
+    "width": 365,
+    "height": 365,
+    "bytes": 9918,
+    "sha": "8869ad37c98df487082f1ff16c92e5bf7ed695fe9dc44a52dbd3d24fe15b74ec",
+    "role": "interior",
+    "decision": "Alternate resolution or crop of interior; canonical image used"
+  },
+  {
+    "id": 25,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_365,h_365_ie-d.webp",
+    "width": 365,
+    "height": 365,
+    "bytes": 16128,
+    "sha": "81319885dbcb77a7ae246fb8d668222376b48eaf3762410a75ee47a6049f8ece",
+    "role": "service",
+    "decision": "Alternate resolution or crop of service; canonical image used"
+  },
+  {
+    "id": 26,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_403,h_202_ie-d.webp",
+    "width": 403,
+    "height": 202,
+    "bytes": 15114,
+    "sha": "bf5603e08498c6dd1ae51589d03a4b7f99ba6894da73fdd26d6d778cfab42a8d",
+    "role": "home",
+    "decision": "Alternate resolution or crop of home; canonical image used"
+  },
+  {
+    "id": 27,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_600,h_300_ie-d.webp",
+    "width": 600,
+    "height": 300,
+    "bytes": 29026,
+    "sha": "2f7dfeb5cd51ea76768752b202b1baa209693adeb0604e2ecab66868f7a9d70c",
+    "role": "home",
+    "decision": "Alternate resolution or crop of home; canonical image used"
+  },
+  {
+    "id": 28,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_70,h_70,a_cc_002_ie-d.webp",
+    "width": 70,
+    "height": 70,
+    "bytes": 2040,
+    "sha": "507a6f4f1c3ef5aa56fd46afed30170370504d7261fd2051b4a3c9fbc14cb0d8",
+    "role": "greens",
+    "decision": "Alternate resolution or crop of greens; canonical image used"
+  },
+  {
+    "id": 29,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_70,h_70,a_cc_003_ie-d.webp",
+    "width": 70,
+    "height": 70,
+    "bytes": 2246,
+    "sha": "dc215c4e2f7c30d7b04fab4daa468cb5758ea977b8dd0d0a2b95386a03957c5b",
+    "role": "courts",
+    "decision": "Alternate resolution or crop of courts; canonical image used"
+  },
+  {
+    "id": 30,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_70,h_70,a_cc_004_ie-d.webp",
+    "width": 70,
+    "height": 70,
+    "bytes": 2206,
+    "sha": "fa043692041dff59a200c95457220ce506bf20de1569cf60a1de17b49b89d8b4",
+    "role": "rooftops",
+    "decision": "Alternate resolution or crop of rooftops; canonical image used"
+  },
+  {
+    "id": 31,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_70,h_70,a_cc_005_ie-d.webp",
+    "width": 70,
+    "height": 70,
+    "bytes": 2410,
+    "sha": "014efbcf0ffd7c7f7cebf15e893447115f15392a045bf2709960a6b8700a2f7b",
+    "role": "valley",
+    "decision": "Alternate resolution or crop of valley; canonical image used"
+  },
+  {
+    "id": 32,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_70,h_70,a_cc_006_ie-d.webp",
+    "width": 70,
+    "height": 70,
+    "bytes": 2070,
+    "sha": "a1020499c259c1ead2b8af443ae70f4d630fa355d636bb0cf44dd7c19aa179b3",
+    "role": "grounds",
+    "decision": "Alternate resolution or crop of grounds; canonical image used"
+  },
+  {
+    "id": 33,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_70,h_70,a_cc_007_ie-d.webp",
+    "width": 70,
+    "height": 70,
+    "bytes": 1950,
+    "sha": "9f87565080ecefbd7a09162904ee1291064691da5067ea4f9cad191cac3f7ecb",
+    "role": "windows",
+    "decision": "Alternate resolution or crop of windows; canonical image used"
+  },
+  {
+    "id": 34,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_70,h_70,a_cc_ie-d.webp",
+    "width": 70,
+    "height": 70,
+    "bytes": 1796,
+    "sha": "85fe262381b5a05d0bf329ea5ce96630b3957e017778220b76625c79dd4bc7b9",
+    "role": "terrace",
+    "decision": "Alternate resolution or crop of terrace; canonical image used"
+  },
+  {
+    "id": 35,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_730,h_730_002_ie-d.webp",
+    "width": 730,
+    "height": 730,
+    "bytes": 95274,
+    "sha": "a9e6ff5c534491ef8a41d9a41808f732ed2d9b05bed82f9dfe07cb4b6defa922",
+    "role": "architecture",
+    "decision": "Alternate resolution or crop of architecture; canonical image used"
+  },
+  {
+    "id": 36,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_730,h_730_003_ie-d.webp",
+    "width": 730,
+    "height": 730,
+    "bytes": 41502,
+    "sha": "3b8ad8a1b090bb86986a48cfad2cd9f0480a4492781b98a385d81d1abc4e8d74",
+    "role": "service",
+    "decision": "Alternate resolution or crop of service; canonical image used"
+  },
+  {
+    "id": 37,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_730,h_730_ie-d.webp",
+    "width": 730,
+    "height": 730,
+    "bytes": 25596,
+    "sha": "710b4cdb806f6e25e770495379799a7450c2941a36ce26b0f0136fae1fa2b345",
+    "role": "interior",
+    "decision": "Alternate resolution or crop of interior; canonical image used"
+  },
+  {
+    "id": 38,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/cr=w_806,h_403_ie-d.webp",
+    "width": 806,
+    "height": 403,
+    "bytes": 45482,
+    "sha": "fcdc988fc5c1355624237fab3f03a4d25f28e5200866a05d3a56537d301510b1",
+    "role": "home",
+    "decision": "Alternate resolution or crop of home; canonical image used"
+  },
+  {
+    "id": 39,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/qt=q_95_002_ie-d.webp",
+    "width": 536,
+    "height": 167,
+    "bytes": 10288,
+    "sha": "b6f56d286ce459e701ed03c9ae673679d3744e137f4400f0a8bbaf60baf5c534",
+    "role": "wordmark",
+    "decision": "Alternate resolution or crop of wordmark; canonical image used"
+  },
+  {
+    "id": 40,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/qt=q_95_003_ie-d.webp",
+    "width": 1071,
+    "height": 334,
+    "bytes": 21148,
+    "sha": "ec695f89c9f6bebe3298fc65e55c598899b80efe041e4757f865e0162ea9d442",
+    "role": "wordmark",
+    "decision": "Alternate resolution or crop of wordmark; canonical image used"
+  },
+  {
+    "id": 41,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/qt=q_95_004_ie-d.webp",
+    "width": 536,
+    "height": 167,
+    "bytes": 8130,
+    "sha": "a20855eb917d16713894b857e188b530864b690c31e3113ae457155c00653033",
+    "role": "wordmark",
+    "decision": "Alternate resolution or crop of wordmark; canonical image used"
+  },
+  {
+    "id": 42,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/qt=q_95_ie-d.webp",
+    "width": 1607,
+    "height": 501,
+    "bytes": 39852,
+    "sha": "eaa5b27527c439c6330ea4fd05cce739112e1363082974106610d205ed44a4de",
+    "role": "wordmark",
+    "decision": "Used: footer"
+  },
+  {
+    "id": 43,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=h_100,cg_true,m_002_ie-d.webp",
+    "width": 100,
+    "height": 100,
+    "bytes": 3466,
+    "sha": "c88eda33afca86e6c0c9ea845eec2c2f708ef126ff1c5ff9b8c423654297e0e5",
+    "role": "chamber",
+    "decision": "Alternate resolution or crop of chamber; canonical image used"
+  },
+  {
+    "id": 44,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=h_100,cg_true,m_ie-d.webp",
+    "width": 100,
+    "height": 100,
+    "bytes": 3480,
+    "sha": "8ec3c342ce093d566145ba1366f188ff695f1d083acabf725a988a0415bba35f",
+    "role": "ridge",
+    "decision": "Alternate resolution or crop of ridge; canonical image used"
+  },
+  {
+    "id": 45,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=h_100,cg_true_002_ie-d.webp",
+    "width": 112,
+    "height": 100,
+    "bytes": 15962,
+    "sha": "947d9f33ed7c987b305cdd149ff17bfbb860a09b71c51852c27c7bf3c2580a60",
+    "role": "realtor",
+    "decision": "Alternate resolution or crop of realtor; canonical image used"
+  },
+  {
+    "id": 46,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=h_100,cg_true_ie-d.webp",
+    "width": 100,
+    "height": 100,
+    "bytes": 5238,
+    "sha": "6a55a50fbfe9fc5a9fba5fe35e5665641422b8036b62e0de71aab49a484f4335",
+    "role": "housing",
+    "decision": "Alternate resolution or crop of housing; canonical image used"
+  },
+  {
+    "id": 47,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_100,h_100,cg_true_ie-d.webp",
+    "width": 100,
+    "height": 100,
+    "bytes": 4818,
+    "sha": "6c0ad35bd6f6e0d58de00e7b1fb714188f7230ad47c29549f0e202e687e52b69",
+    "role": "housing",
+    "decision": "Alternate resolution or crop of housing; canonical image used"
+  },
+  {
+    "id": 48,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1023,h_681_002_ie-d.webp",
+    "width": 1023,
+    "height": 681,
+    "bytes": 138120,
+    "sha": "6f4fe37d4f4df305a5b20ae07d77a5a6ed7ff6958a063158756be31ecd239089",
+    "role": "rooftops",
+    "decision": "Alternate resolution or crop of rooftops; canonical image used"
+  },
+  {
+    "id": 49,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1023,h_681_003_ie-d.webp",
+    "width": 1023,
+    "height": 681,
+    "bytes": 118094,
+    "sha": "8ae73b0515e60dda3080e283cfa1ab719d79c5c8c6cb74a868edc8c966e8d709",
+    "role": "grounds",
+    "decision": "Alternate resolution or crop of grounds; canonical image used"
+  },
+  {
+    "id": 50,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1023,h_681_004_ie-d.webp",
+    "width": 1023,
+    "height": 681,
+    "bytes": 109032,
+    "sha": "85a1c271e09509323f63af5f7b1ed584a9ab715ae20d359c5bcd738d62ec9c55",
+    "role": "terrace",
+    "decision": "Alternate resolution or crop of terrace; canonical image used"
+  },
+  {
+    "id": 51,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1023,h_681_005_ie-d.webp",
+    "width": 1021,
+    "height": 681,
+    "bytes": 113260,
+    "sha": "e46b96874e9112a89b893c985007593fea952affd9c00d67b507298b074c3748",
+    "role": "windows",
+    "decision": "Alternate resolution or crop of windows; canonical image used"
+  },
+  {
+    "id": 52,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1023,h_681_ie-d.webp",
+    "width": 1023,
+    "height": 681,
+    "bytes": 144934,
+    "sha": "19cc11d075c4d3cec538b0592b7bdcfacf805e84db54898b0412e4f205e4a830",
+    "role": "valley",
+    "decision": "Alternate resolution or crop of valley; canonical image used"
+  },
+  {
+    "id": 53,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1023,h_682_002_ie-d.webp",
+    "width": 1023,
+    "height": 682,
+    "bytes": 97986,
+    "sha": "70cf468e7ce0af89792cbd6868b0d9bcd9dd7c519250acee89942f8d6c3ebd23",
+    "role": "greens",
+    "decision": "Alternate resolution or crop of greens; canonical image used"
+  },
+  {
+    "id": 54,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1023,h_682_ie-d.webp",
+    "width": 1023,
+    "height": 682,
+    "bytes": 136596,
+    "sha": "6cd43bdb9db694fe06c35ce67053dfc81f0ed46009cda94d0dab18018bb385ab",
+    "role": "courts",
+    "decision": "Alternate resolution or crop of courts; canonical image used"
+  },
+  {
+    "id": 55,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1095,h_1095,cg_true_ie-d.webp",
+    "width": 1095,
+    "height": 1095,
+    "bytes": 71360,
+    "sha": "032625d3f4906e7c65ff8081797f657fcc642026442888214bdffcded89147a0",
+    "role": "portrait",
+    "decision": "Alternate resolution or crop of portrait; canonical image used"
+  },
+  {
+    "id": 56,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_112,h_100,cg_true_ie-d.webp",
+    "width": 112,
+    "height": 100,
+    "bytes": 22404,
+    "sha": "02c28c19d694c35758cff146076b15c1c4c988b36d93dcaa1c80827e6b8bbaf4",
+    "role": "realtor",
+    "decision": "Alternate resolution or crop of realtor; canonical image used"
+  },
+  {
+    "id": 57,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1200,h_600,cg_true,m_ie-d.webp",
+    "width": 1200,
+    "height": 600,
+    "bytes": 180458,
+    "sha": "caee40c31cc9b94676aa32d7d2cd5863ed04fed508ed4470ae02e885cea38818",
+    "role": "keys",
+    "decision": "Alternate resolution or crop of keys; canonical image used"
+  },
+  {
+    "id": 58,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1200,h_600,cg_true_ie-d.webp",
+    "width": 1200,
+    "height": 600,
+    "bytes": 88016,
+    "sha": "d5f2033684ca0ad5ac6204fdd90266bae1d0ae64b23ac0960ff80954ef84ea2d",
+    "role": "kitchen",
+    "decision": "Alternate resolution or crop of kitchen; canonical image used"
+  },
+  {
+    "id": 59,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1209,h_605,cg_true,m_ie-d.webp",
+    "width": 1211,
+    "height": 605,
+    "bytes": 184152,
+    "sha": "8bbae747a44154880056ec7c67ded941b7c0574d247760e8af85e1d05457c374",
+    "role": "keys",
+    "decision": "Alternate resolution or crop of keys; canonical image used"
+  },
+  {
+    "id": 60,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1209,h_605,cg_true_ie-d.webp",
+    "width": 1209,
+    "height": 604,
+    "bytes": 89402,
+    "sha": "7b53bbc0b2231f700cd346d88d8fd33b6cb77a0621250019d2ac3c5850480a7c",
+    "role": "kitchen",
+    "decision": "Alternate resolution or crop of kitchen; canonical image used"
+  },
+  {
+    "id": 61,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1800,h_900,cg_true,m_ie-d.webp",
+    "width": 1800,
+    "height": 900,
+    "bytes": 346926,
+    "sha": "0103f97ce3c1928524ad77d9aef7c18c5fe37aeab04735ea8e18becc8880048b",
+    "role": "keys",
+    "decision": "Alternate resolution or crop of keys; canonical image used"
+  },
+  {
+    "id": 62,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_1800,h_900,cg_true_ie-d.webp",
+    "width": 1800,
+    "height": 900,
+    "bytes": 156660,
+    "sha": "1dce217fc4c3576f56a6b809c0e16e6094b8d34e0bf8d48d04056dafc32f59f2",
+    "role": "kitchen",
+    "decision": "Alternate resolution or crop of kitchen; canonical image used"
+  },
+  {
+    "id": 63,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_199,h_200,cg_true_ie-d.webp",
+    "width": 199,
+    "height": 200,
+    "bytes": 10220,
+    "sha": "fb0d4dc7f11ff0adddf172a0ae3cd98120408d73ffae49baa819fbe26fa18ec2",
+    "role": "housing",
+    "decision": "Alternate resolution or crop of housing; canonical image used"
+  },
+  {
+    "id": 64,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_223,h_200,cg_true_ie-d.webp",
+    "width": 223,
+    "height": 200,
+    "bytes": 18756,
+    "sha": "e8c36b64a82af90baa4a657a7d29909e4cafbb95b6e83fe0072b0f52d45316b7",
+    "role": "realtor",
+    "decision": "Alternate resolution or crop of realtor; canonical image used"
+  },
+  {
+    "id": 65,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_299,h_300,cg_true_ie-d.webp",
+    "width": 299,
+    "height": 300,
+    "bytes": 16238,
+    "sha": "d2b5d463198cdb118ab42bf6b1b18bcef63ad99ce15e041e3a99669b961994ed",
+    "role": "housing",
+    "decision": "Alternate resolution or crop of housing; canonical image used"
+  },
+  {
+    "id": 66,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_335,h_300,cg_true_ie-d.webp",
+    "width": 335,
+    "height": 300,
+    "bytes": 21640,
+    "sha": "c11e4ff69d60b3fd272627fc7d9038609565c9eb6858bdee3c0aff259aaf044a",
+    "role": "realtor",
+    "decision": "Alternate resolution or crop of realtor; canonical image used"
+  },
+  {
+    "id": 67,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_365,h_365,cg_true_ie-d.webp",
+    "width": 365,
+    "height": 365,
+    "bytes": 9900,
+    "sha": "f0ec8e99f1a2de6640a527c752d75be28fdced73e6ff891b4d27d7702d79583d",
+    "role": "portrait",
+    "decision": "Alternate resolution or crop of portrait; canonical image used"
+  },
+  {
+    "id": 68,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_202,cg_true,m_ie-d.webp",
+    "width": 405,
+    "height": 202,
+    "bytes": 25092,
+    "sha": "7316551a9b2b88cfcca1fa13fe7e34f8539a5ecf252498e8da70bd9a5058ceba",
+    "role": "keys",
+    "decision": "Alternate resolution or crop of keys; canonical image used"
+  },
+  {
+    "id": 69,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_202,cg_true_ie-d.webp",
+    "width": 403,
+    "height": 201,
+    "bytes": 17028,
+    "sha": "51064378c87f3ffcd84dd8552fd35f3f167f1ce620709c80279928a70397a2be",
+    "role": "kitchen",
+    "decision": "Alternate resolution or crop of kitchen; canonical image used"
+  },
+  {
+    "id": 70,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_268_002_ie-d.webp",
+    "width": 403,
+    "height": 268,
+    "bytes": 24402,
+    "sha": "eb4430e30902f934edee8bd34a8d70d45919792d6e3cec7ce5e2f8dc9f0d1533",
+    "role": "terrace",
+    "decision": "Alternate resolution or crop of terrace; canonical image used"
+  },
+  {
+    "id": 71,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_268_003_ie-d.webp",
+    "width": 402,
+    "height": 268,
+    "bytes": 24546,
+    "sha": "4fe3e1ec1c457e4f242930591b1fb597be095cb93881b27d7c724fdc0e3b0be7",
+    "role": "windows",
+    "decision": "Alternate resolution or crop of windows; canonical image used"
+  },
+  {
+    "id": 72,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_268_004_ie-d.webp",
+    "width": 403,
+    "height": 268,
+    "bytes": 30222,
+    "sha": "6f7c3d6a0dd9a594ffb0f71218b973fe5834e31e5b2c102aec40450b75d44d97",
+    "role": "rooftops",
+    "decision": "Alternate resolution or crop of rooftops; canonical image used"
+  },
+  {
+    "id": 73,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_268_005_ie-d.webp",
+    "width": 403,
+    "height": 268,
+    "bytes": 27304,
+    "sha": "1d768bd3f5753efd974594c295ea5fa5ad740888cf58a884cafe96522e9645c9",
+    "role": "grounds",
+    "decision": "Alternate resolution or crop of grounds; canonical image used"
+  },
+  {
+    "id": 74,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_268_ie-d.webp",
+    "width": 403,
+    "height": 268,
+    "bytes": 33674,
+    "sha": "45bbdda4d18956525505f7c547093a9821e684469522b03cb81a95de34ff4bf2",
+    "role": "valley",
+    "decision": "Alternate resolution or crop of valley; canonical image used"
+  },
+  {
+    "id": 75,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_269_002_ie-d.webp",
+    "width": 403,
+    "height": 269,
+    "bytes": 23600,
+    "sha": "bc8a30d3e4ac4a6e03196f3f673366b585aabd6533aa7c5121dbccd1e83776b6",
+    "role": "greens",
+    "decision": "Alternate resolution or crop of greens; canonical image used"
+  },
+  {
+    "id": 76,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_403,h_269_ie-d.webp",
+    "width": 403,
+    "height": 269,
+    "bytes": 30664,
+    "sha": "4fc7d495bd0ff134ef0798b640b4a465e78a088d3c313577689e3db97ac0d6c5",
+    "role": "courts",
+    "decision": "Alternate resolution or crop of courts; canonical image used"
+  },
+  {
+    "id": 77,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_600,h_300,cg_true,m_ie-d.webp",
+    "width": 600,
+    "height": 300,
+    "bytes": 51634,
+    "sha": "d7b5a533a2ccfb2e38a30365a7f4eb27b7539f88824ed8c0213b78e2c7b0d878",
+    "role": "keys",
+    "decision": "Alternate resolution or crop of keys; canonical image used"
+  },
+  {
+    "id": 78,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_600,h_300,cg_true_ie-d.webp",
+    "width": 600,
+    "height": 300,
+    "bytes": 30636,
+    "sha": "50227470c514d625f9bbd791df6924feda56ebfdc61555a2181687f42a710d58",
+    "role": "kitchen",
+    "decision": "Alternate resolution or crop of kitchen; canonical image used"
+  },
+  {
+    "id": 79,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_719,h_479_002_ie-d.webp",
+    "width": 719,
+    "height": 479,
+    "bytes": 86470,
+    "sha": "560f623616dcf53d3bf75ee237e9c40038162ee54b2813ac3a2a1a0e483d780c",
+    "role": "valley",
+    "decision": "Alternate resolution or crop of valley; canonical image used"
+  },
+  {
+    "id": 80,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_719,h_479_003_ie-d.webp",
+    "width": 719,
+    "height": 479,
+    "bytes": 63498,
+    "sha": "6824218f84dacc2daeaef73869807923b9b9ecc5db399ec3d9ab8fa1e3ae95ff",
+    "role": "windows",
+    "decision": "Alternate resolution or crop of windows; canonical image used"
+  },
+  {
+    "id": 81,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_719,h_479_004_ie-d.webp",
+    "width": 719,
+    "height": 479,
+    "bytes": 81870,
+    "sha": "6624b2fbfb2e691a72209aa18fbe2a318dc6daebd5975ad247505bc96f67d3ed",
+    "role": "rooftops",
+    "decision": "Alternate resolution or crop of rooftops; canonical image used"
+  },
+  {
+    "id": 82,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_719,h_479_005_ie-d.webp",
+    "width": 719,
+    "height": 479,
+    "bytes": 70578,
+    "sha": "cafd2943f70f805817950f7c6af4ec0e300774859af8120d447251fbbb6d0254",
+    "role": "grounds",
+    "decision": "Alternate resolution or crop of grounds; canonical image used"
+  },
+  {
+    "id": 83,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_719,h_479_ie-d.webp",
+    "width": 719,
+    "height": 479,
+    "bytes": 65310,
+    "sha": "798cb0afde5bced2dde93ebe1a9e1de0d4823acbbe83c93d48d90910629d7711",
+    "role": "greens",
+    "decision": "Alternate resolution or crop of greens; canonical image used"
+  },
+  {
+    "id": 84,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_719,h_480_002_ie-d.webp",
+    "width": 719,
+    "height": 480,
+    "bytes": 58864,
+    "sha": "3c77b7a3ad3af37c00183f8f6f1a2f38778cd107846ea95af670b8e0592b6816",
+    "role": "courts",
+    "decision": "Alternate resolution or crop of courts; canonical image used"
+  },
+  {
+    "id": 85,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_719,h_480_ie-d.webp",
+    "width": 719,
+    "height": 480,
+    "bytes": 79384,
+    "sha": "687521869b6e6c44bfd2a9d4c83bed4cad4a66dc95c3784068cc15fd07af17fd",
+    "role": "terrace",
+    "decision": "Alternate resolution or crop of terrace; canonical image used"
+  },
+  {
+    "id": 86,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_730,h_730,cg_true_ie-d.webp",
+    "width": 730,
+    "height": 730,
+    "bytes": 32822,
+    "sha": "2bc04c9d2c400c8a59b2379720c333eb641b526f2beee7e2d166911cc522b8a4",
+    "role": "portrait",
+    "decision": "Alternate resolution or crop of portrait; canonical image used"
+  },
+  {
+    "id": 87,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_403,cg_true,m_ie-d.webp",
+    "width": 806,
+    "height": 403,
+    "bytes": 90126,
+    "sha": "f3aebff440dcfb83c350559e14da4ae1a30c3c7beb53ecbe49855d57452693e0",
+    "role": "keys",
+    "decision": "Alternate resolution or crop of keys; canonical image used"
+  },
+  {
+    "id": 88,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_403,cg_true_ie-d.webp",
+    "width": 806,
+    "height": 403,
+    "bytes": 48550,
+    "sha": "288535812402b1e5882d48fff4dde56bd0d424b2f11dbdda3ba3d70cf7869947",
+    "role": "kitchen",
+    "decision": "Alternate resolution or crop of kitchen; canonical image used"
+  },
+  {
+    "id": 89,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_537_002_ie-d.webp",
+    "width": 806,
+    "height": 537,
+    "bytes": 97978,
+    "sha": "298fcfb6668d97fc6eb7982db552c9b7bcffbb800e21746b3b5d442cbc4b032b",
+    "role": "terrace",
+    "decision": "Alternate resolution or crop of terrace; canonical image used"
+  },
+  {
+    "id": 90,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_537_003_ie-d.webp",
+    "width": 806,
+    "height": 537,
+    "bytes": 115894,
+    "sha": "748dc3ff9db39b363f3f658196a09fde77e65e355fe9d15c106d06b48d660b3d",
+    "role": "valley",
+    "decision": "Alternate resolution or crop of valley; canonical image used"
+  },
+  {
+    "id": 91,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_537_004_ie-d.webp",
+    "width": 806,
+    "height": 537,
+    "bytes": 76288,
+    "sha": "82937132be31c6d7a5dfa14dcbc0e007acc38662798222be957f9995abfac76c",
+    "role": "windows",
+    "decision": "Alternate resolution or crop of windows; canonical image used"
+  },
+  {
+    "id": 92,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_537_005_ie-d.webp",
+    "width": 806,
+    "height": 537,
+    "bytes": 84990,
+    "sha": "7a5f202fd03aff8a00eed2b5c4ee486afa6706ccc214a267bfb2e854470f2a32",
+    "role": "grounds",
+    "decision": "Alternate resolution or crop of grounds; canonical image used"
+  },
+  {
+    "id": 93,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_537_ie-d.webp",
+    "width": 806,
+    "height": 537,
+    "bytes": 88984,
+    "sha": "d32facae138ae6ca8ad3b62fcbd10bfffa78ca3fbd5f063f5bb73ac123a992b5",
+    "role": "courts",
+    "decision": "Alternate resolution or crop of courts; canonical image used"
+  },
+  {
+    "id": 94,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_538_002_ie-d.webp",
+    "width": 806,
+    "height": 538,
+    "bytes": 107756,
+    "sha": "9b9d104a5792b563121698b5f224759cefd2e73edc0eeedd7f4562b3bd3e9e84",
+    "role": "rooftops",
+    "decision": "Alternate resolution or crop of rooftops; canonical image used"
+  },
+  {
+    "id": 95,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_806,h_538_ie-d.webp",
+    "width": 806,
+    "height": 538,
+    "bytes": 80102,
+    "sha": "03d6b5abb22e13f73662dec7b1173710fd353ef075c933f6b80c5e6659305768",
+    "role": "greens",
+    "decision": "Alternate resolution or crop of greens; canonical image used"
+  },
+  {
+    "id": 96,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_984,h_655_002_ie-d.webp",
+    "width": 984,
+    "height": 655,
+    "bytes": 159544,
+    "sha": "856c480225b9d8123f027fe2e3abcda284e8fca4f3c888b60d2d902d85381d1c",
+    "role": "valley",
+    "decision": "Alternate resolution or crop of valley; canonical image used"
+  },
+  {
+    "id": 97,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_984,h_655_003_ie-d.webp",
+    "width": 982,
+    "height": 655,
+    "bytes": 103726,
+    "sha": "2087e361a761340297a121e4df671a469cf68c57fdc09441230fbadedf54a090",
+    "role": "windows",
+    "decision": "Alternate resolution or crop of windows; canonical image used"
+  },
+  {
+    "id": 98,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_984,h_655_004_ie-d.webp",
+    "width": 984,
+    "height": 655,
+    "bytes": 124886,
+    "sha": "3dc5978b273904eb5df321cfc2cd864bb851da4f968344c4a870300c9d36a4cd",
+    "role": "terrace",
+    "decision": "Alternate resolution or crop of terrace; canonical image used"
+  },
+  {
+    "id": 99,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_984,h_655_005_ie-d.webp",
+    "width": 984,
+    "height": 655,
+    "bytes": 112690,
+    "sha": "ec191657db84c00e4103e52c5bb7e1fb065a5d98c63b94a18dc8d1bd5b108cc7",
+    "role": "rooftops",
+    "decision": "Alternate resolution or crop of rooftops; canonical image used"
+  },
+  {
+    "id": 100,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_984,h_655_ie-d.webp",
+    "width": 984,
+    "height": 655,
+    "bytes": 153340,
+    "sha": "159f4ebb78e3420879440d26423a6faa48cf9610298470da6a6106a46562ea77",
+    "role": "grounds",
+    "decision": "Alternate resolution or crop of grounds; canonical image used"
+  },
+  {
+    "id": 101,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_984,h_656_002_ie-d.webp",
+    "width": 984,
+    "height": 656,
+    "bytes": 111650,
+    "sha": "ba8553138cd7d7cc7daa54a17c6d6ab4494d39197c62d186fb09c8dbe2828836",
+    "role": "courts",
+    "decision": "Alternate resolution or crop of courts; canonical image used"
+  },
+  {
+    "id": 102,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/rs=w_984,h_656_ie-d.webp",
+    "width": 984,
+    "height": 656,
+    "bytes": 150868,
+    "sha": "79dbecd235cce51d85407dbc3de63b9a7f801faba5f133d9167396a096d155c4",
+    "role": "greens",
+    "decision": "Alternate resolution or crop of greens; canonical image used"
+  },
+  {
+    "id": 103,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/spotlight-poi3_hdpi_ie-d.png",
+    "width": 52,
+    "height": 74,
+    "bytes": 628,
+    "sha": "718830d7a5f972934617febe7c7662a7edaa505aa1881ab09e8d20464d9960c2",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 104,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/transparent_ie-d.png",
+    "width": 1,
+    "height": 1,
+    "bytes": 68,
+    "sha": "fe67e12a6497f8518ef1673fd8cf5622871935ff85f204715e78b2009dd48588",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 105,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_002_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 488,
+    "sha": "3bbebedd50487304f77d902a0c3cc708be8cc4809ebb4055a473e93280dcb0df",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 106,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_003_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 366,
+    "sha": "986f8ba16a1cb3557a9a5e6987702f141b7ad5b15c66cb16cf07f895f627c48b",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 107,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_004_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 54,
+    "sha": "4af92ccff9da609eb333a9120e1ba47e6008015e751c0f21ddb89e60829299a9",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 108,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_005_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 5348,
+    "sha": "070d67eb54a3bde68b51520870f644b8ed2958ccd900c40b2f865bb50c4085be",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 109,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_006_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 494,
+    "sha": "f243655a69898364db68163c8e0cb22b480e9049059eafcefbdb00137c84a572",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 110,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_007_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 5810,
+    "sha": "5eaac7de28612e9fd1f440be6db36baceadc533fed2b687a1ba623ad903e50ca",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 111,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_008_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 7630,
+    "sha": "0b70da8d3222ec6313d2e1b969dca0782817fe4a3cc1dd75f90dc38304ea72a1",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 112,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_009_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 10400,
+    "sha": "eb373dc935f65a9ca60dea77b77cd670ea73fb2c1b5d24840d458ef4109f17bc",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 113,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_010_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 25292,
+    "sha": "02ef1ca7127db4e464ff3ba0a9c4dd9a47867569e37fc71fb4b41e46d3ad414f",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 114,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_011_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 23504,
+    "sha": "ed0203c412195cde1bc83253c2a3ab48209dc042e7d650b2b74b2f29963de717",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 115,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_012_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 6604,
+    "sha": "44e68fad134f45ee14430942cf54576cd2a5eb32272dc76e0d237f5921c496e3",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 116,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_013_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 3160,
+    "sha": "9509ff57a42e649eac82afac758af97c64a92a5eba93c4f53ede149196bad731",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 117,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_014_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 8230,
+    "sha": "b0fcc3293dfce38a9885f15ba6bd33f3036817af5a7655c4646e745fe6881499",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 118,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_015_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 19860,
+    "sha": "d5b652c65bd30a7693924e16c1cd6be759ac09c6af33f90f946c4e099687cd81",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 119,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_016_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 19440,
+    "sha": "becac075289f37be00ca95311174fe2cef31629e488e3c3bf884088ee855437e",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 120,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_017_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 676,
+    "sha": "d147511be93c076348602270435fc28732ce8ebf103aedf81b37ec217f3c5d52",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 121,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_018_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 18532,
+    "sha": "d3a3cea20ec504971fcafe61c6df684320fece1f3d4b4b5f3e313f2bb4cddbdf",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 122,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_019_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 1298,
+    "sha": "8dfac611c331e2722e99b3002c1c6940e398d48f073872cbfc4c1f9dc9efa604",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 123,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_020_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 4978,
+    "sha": "3e6ed7320042e264c9b2383d57360e706404669b68e0b098bf21961d89a4ec8a",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 124,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_021_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 14548,
+    "sha": "30e751b11ea08748fc35e066f60b41de83afe2de0bc81fc5c29fd65f4179770c",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 125,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_022_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 7584,
+    "sha": "26cc7a43916215643a75d685df7331f721317ca8bcc718d89c237a0cfccea9d8",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 126,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_023_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 240,
+    "sha": "449ff243471d45bb9364c8a2ed7530895d197621ab0e035c2014180d2ce20b5d",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 127,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_024_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 5038,
+    "sha": "095aeda6b5dd3e10523f49b568b862798625752f2189cb533c215285f94c2e83",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 128,
+    "source": "Images/Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor_files/vt_ie-d.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 18896,
+    "sha": "1352b8e78c1a6ef4b40472d8521125b1824624a16ea8a10ceeb5ec0df74014a6",
+    "role": "saved map artifact",
+    "decision": "Excluded: saved map tile, map marker, or transparent browser artifact; not standalone photography"
+  },
+  {
+    "id": 129,
+    "source": "Images/PahrumpValleyLogo.webp",
+    "width": 200,
+    "height": 200,
+    "bytes": 7380,
+    "sha": "8cc08a93aa4b3a92add66b635dcff3c85b9a5f96498e10133c79072191475e38",
+    "role": "chamber",
+    "decision": "Used: affiliations"
+  },
+  {
+    "id": 130,
+    "source": "Images/RealtoLogo.webp",
+    "width": 223,
+    "height": 200,
+    "bytes": 18756,
+    "sha": "e8c36b64a82af90baa4a657a7d29909e4cafbb95b6e83fe0072b0f52d45316b7",
+    "role": "realtor",
+    "decision": "Used: affiliations"
+  },
+  {
+    "id": 131,
+    "source": "Images/Realtor-solo.webp",
+    "width": 730,
+    "height": 730,
+    "bytes": 32822,
+    "sha": "2bc04c9d2c400c8a59b2379720c333eb641b526f2beee7e2d166911cc522b8a4",
+    "role": "portrait",
+    "decision": "Used: arrival, about"
+  },
+  {
+    "id": 132,
+    "source": "Images/RidgeRealtyGroupLogo.webp",
+    "width": 200,
+    "height": 200,
+    "bytes": 6776,
+    "sha": "9fe8ce9d88460ec7de7d3bf70f0ef46bed25da4dbffee31e642e01aaf9797255",
+    "role": "ridge",
+    "decision": "Used: affiliations"
+  },
+  {
+    "id": 133,
+    "source": "Images/photoGallery1.webp",
+    "width": 984,
+    "height": 655,
+    "bytes": 159544,
+    "sha": "856c480225b9d8123f027fe2e3abcda284e8fca4f3c888b60d2d902d85381d1c",
+    "role": "valley",
+    "decision": "Used: collection, gallery"
+  },
+  {
+    "id": 134,
+    "source": "Images/photogallery2.webp",
+    "width": 982,
+    "height": 655,
+    "bytes": 103726,
+    "sha": "2087e361a761340297a121e4df671a469cf68c57fdc09441230fbadedf54a090",
+    "role": "windows",
+    "decision": "Used: collection, gallery"
+  },
+  {
+    "id": 135,
+    "source": "Images/photogallery3.webp",
+    "width": 984,
+    "height": 655,
+    "bytes": 124886,
+    "sha": "3dc5978b273904eb5df321cfc2cd864bb851da4f968344c4a870300c9d36a4cd",
+    "role": "terrace",
+    "decision": "Used: collection, gallery"
+  },
+  {
+    "id": 136,
+    "source": "Images/photogallery4.webp",
+    "width": 984,
+    "height": 655,
+    "bytes": 153340,
+    "sha": "159f4ebb78e3420879440d26423a6faa48cf9610298470da6a6106a46562ea77",
+    "role": "rooftops",
+    "decision": "Used: collection, gallery"
+  },
+  {
+    "id": 137,
+    "source": "Images/photogallery6.webp",
+    "width": 984,
+    "height": 655,
+    "bytes": 112690,
+    "sha": "ec191657db84c00e4103e52c5bb7e1fb065a5d98c63b94a18dc8d1bd5b108cc7",
+    "role": "grounds",
+    "decision": "Used: collection, gallery"
+  },
+  {
+    "id": 138,
+    "source": "Images/photogallery7.webp",
+    "width": 984,
+    "height": 656,
+    "bytes": 150868,
+    "sha": "79dbecd235cce51d85407dbc3de63b9a7f801faba5f133d9167396a096d155c4",
+    "role": "courts",
+    "decision": "Used: collection, gallery"
+  },
+  {
+    "id": 139,
+    "source": "Images/photogallery8.webp",
+    "width": 984,
+    "height": 656,
+    "bytes": 111650,
+    "sha": "ba8553138cd7d7cc7daa54a17c6d6ab4494d39197c62d186fb09c8dbe2828836",
+    "role": "greens",
+    "decision": "Used: collection, gallery"
+  },
+  {
+    "id": 140,
+    "source": "Images/services1.webp",
+    "width": 730,
+    "height": 730,
+    "bytes": 25596,
+    "sha": "710b4cdb806f6e25e770495379799a7450c2941a36ce26b0f0136fae1fa2b345",
+    "role": "interior",
+    "decision": "Used: lifestyle"
+  },
+  {
+    "id": 141,
+    "source": "Images/services2.webp",
+    "width": 730,
+    "height": 730,
+    "bytes": 95274,
+    "sha": "a9e6ff5c534491ef8a41d9a41808f732ed2d9b05bed82f9dfe07cb4b6defa922",
+    "role": "architecture",
+    "decision": "Used: lifestyle"
+  },
+  {
+    "id": 142,
+    "source": "Images/services3.webp",
+    "width": 730,
+    "height": 730,
+    "bytes": 41502,
+    "sha": "3b8ad8a1b090bb86986a48cfad2cd9f0480a4492781b98a385d81d1abc4e8d74",
+    "role": "service",
+    "decision": "Used: lifestyle"
+  }
+]

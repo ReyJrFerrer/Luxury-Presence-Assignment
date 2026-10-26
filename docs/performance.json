@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-26T02:36:20.172Z",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/134.0.6998.35 Safari/537.36",
+  "categories": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "metrics": {
+    "largest-contentful-paint": {
+      "value": 2106.886,
+      "display": "2.1 s"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.00317146557551222,
+      "display": "0.003"
+    },
+    "total-blocking-time": {
+      "value": 0,
+      "display": "0 ms"
+    },
+    "first-contentful-paint": {
+      "value": 1210.329,
+      "display": "1.2 s"
+    }
+  },
+  "accessibleNameAudit": null
+}

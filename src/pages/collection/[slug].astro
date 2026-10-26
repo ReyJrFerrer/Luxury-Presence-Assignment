@@ -1,0 +1,9 @@
+---
+import {Image} from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+import {collection} from '../../data/assets';
+export function getStaticPaths(){return collection.map(item=>({params:{slug:item.slug},props:{item}}));}
+const {item}=Astro.props;
+---
+<Layout title={`${item.title} | Marci Metzger`} description={`${item.asset.alt}. Explore Marci Metzger’s photographic collection and ask about your next home.`}><main class="detail-page wrap" id="main"><a class="text-link" href="/#collection">← Back to the collection</a><p class="eyebrow">THE PHOTOGRAPHIC COLLECTION / {item.subtitle}</p><h1>{item.title}</h1><Image src={item.asset.image} alt={item.asset.alt} widths={[500,800,984]} sizes="90vw" loading="eager" fetchpriority="high"/><div class="detail-caption"><p>{item.asset.alt}.<br/>From the project’s photographic archive.</p><div><h2>Imagine what comes next.</h2><p>This photograph is presented for inspiration. A property address, price, and current availability have not been supplied. Speak with Marci about verified listings and viewing opportunities.</p><a class="button button-dark" href="tel:+12069196886">Ask Marci about homes ↗</a></div></div></main><Footer/></Layout>
